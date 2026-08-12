@@ -1,0 +1,25 @@
+{
+  "name": "ai-voices",
+  "version": "0.1.0",
+  "description": "Single-plugin catalog publishing the ai-voices authoring guides from this repository.",
+  "owner": {
+    "name": "Stephen van Gaal",
+    "email": "svangaal@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "ai-voices",
+      "description": "Writing guides for AI agents — how prose in a repository should sound, and what a document must carry. One author's standards, published to be adapted.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Stephen van Gaal"
+      },
+      "source": {
+        "source": "github",
+        "repo": "Stephen-van-Gaal/ai-voices"
+      },
+      "category": "development",
+      "homepage": "https://github.com/Stephen-van-Gaal/ai-voices"
+    }
+  ]
+}
