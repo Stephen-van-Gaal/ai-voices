@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "ai-voices",
-      "description": "Writing guides for AI agents — how prose in a repository should sound, and what a document must carry. One author's standards, published to be adapted.",
+      "description": "Writing guides for AI agents \u2014 how prose in a repository should sound, and what a document must carry. One author's standards, published to be adapted.",
       "version": "0.1.0",
       "author": {
         "name": "Stephen van Gaal"
@@ -19,7 +19,8 @@
         "repo": "Stephen-van-Gaal/ai-voices"
       },
       "category": "development",
-      "homepage": "https://github.com/Stephen-van-Gaal/ai-voices"
+      "homepage": "https://github.com/Stephen-van-Gaal/ai-voices",
+      "license": "CC-BY-4.0"
     }
   ]
 }

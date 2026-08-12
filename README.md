@@ -52,7 +52,8 @@ file telling the agent to invoke `authoring-voice` before writing prose.
 ## Adapting them
 
 Fork it. The guides are prose, and every rule states its reason, so you can tell
-which ones you disagree with and why. Two things are worth keeping if you change
+which ones you disagree with and why. They are licensed CC BY 4.0, so adapting
+and redistributing them is permitted as long as the source is credited. Two things are worth keeping if you change
 anything else: read `voice-base.md` first, because nothing else repeats it, and
 keep cross-references as bare filenames, because a path-qualified reference only
 resolves in the one place it was written.

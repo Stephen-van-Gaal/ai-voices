@@ -1,7 +1,7 @@
 {
   "name": "ai-voices",
   "version": "0.1.0",
-  "description": "Writing guides for AI agents — how prose in a repository should sound, and what a document must carry. One author's standards, published to be adapted.",
+  "description": "Writing guides for AI agents \u2014 how prose in a repository should sound, and what a document must carry. One author's standards, published to be adapted.",
   "homepage": "https://github.com/Stephen-van-Gaal/ai-voices",
   "repository": "https://github.com/Stephen-van-Gaal/ai-voices",
   "author": {
@@ -14,5 +14,6 @@
     "style-guide",
     "documentation",
     "technical-writing"
-  ]
+  ],
+  "license": "CC-BY-4.0"
 }
