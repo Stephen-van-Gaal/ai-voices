@@ -72,6 +72,33 @@ Don't editorialize a result; state it and let it stand. Tense, lightly: past for
 what was done and found, present for established knowledge and for what the
 document itself does ("this protocol sets out…").
 
+Narrative vignettes (patient stories, case examples). A vignette is evidence in
+narrative form. The reader must finish it believing it happened, which they will
+not do if the narrator is visibly steering. It usually sits in the significance
+section, which may argue; a vignette argues by reporting, so it keeps the
+plainness of methods rather than the licence of the section around it. Report the
+case, and let one sentence at the end say what it means. That sentence is the
+whole of the licence; nothing before it explains.
+
+Write in the past tense. The historic present is a literary device, and it turns
+a case report into a short story. Write the fact, then stop, giving each sentence
+one clause. A flourish arrives as a subordinate clause — the aside after a dash,
+the participle trailing the fact — so a sentence built from a main clause alone
+has nowhere to put one. Where a second thought is worth having, it gets its own
+sentence. Say what happened, not what it means: the meaning is the reader's to
+make until the closing sentence, and the details carry it without help, since
+page four of a five-page note needs no gloss. Reach for the specific noun — a
+number, a page, a date, a measurement. "Six weeks of breathlessness" over "weeks
+of breathlessness," "an 8 mm nodule in the right upper lobe" over "a small spot
+on the lung," wherever the reader can carry the term. End the narrative on the
+last fact and let the interpretive sentence follow it, because a verdict reached
+early is the most reliable tell there is: the facts have already made the point,
+and saying it as they go tells the reader you did not trust them to get there.
+Three counts catch what the drafting rules miss — dashes above about one per
+paragraph, any sentence past 35 words, and any sentence inside the narrative that
+could be deleted without losing a fact. Each is usually interpretation that
+arrived without being asked for.
+
 Positioning against prior work. Locate the study against a real gap, stated
 fairly. Characterize earlier instruments and studies accurately, credit what
 they got right, then name the specific limitation your work addresses. Argue with
