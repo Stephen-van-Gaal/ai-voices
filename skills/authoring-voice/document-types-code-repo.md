@@ -10,6 +10,11 @@ Where an obligation here conflicts with a voice preference, this file wins.
 
 - **Open with what it is for and who reads it.** Where a document serves more
   than one reader, route each to the section that answers them.
+- **Route a second reader with a reading profile.** Where whatever serves this
+  document can return part of it, declare a named list of sections and hand each
+  reader theirs. That list is what the reading surface means for this document.
+  Where no such mechanism exists, section order carries the obligation instead:
+  keep each reader's sections together and say in the opening where they start.
 - **Lead with the conclusion.** Put the finding in the first sentence of the
   document and of each section. Do not build toward it. A reader who stops
   halfway should still have the finding.
@@ -22,6 +27,15 @@ Where an obligation here conflicts with a voice preference, this file wins.
   came to make.
 - **Name the vocabulary you assume.** Say in the opening what the reader is
   expected to know already. Gloss anything outside that once, at first use.
+- **A long document carries a contents section.** Past roughly 300 lines or ten
+  top-level sections a reader needs navigation. Generate it, and never maintain
+  it by hand: a hand-written index is a second copy of the heading list, and it
+  goes stale the first time a heading moves.
+- **A section takes the class of its job, not the file's.** A reference document
+  may hold an explanatory section, and each follows the rules of its own class.
+  The unit is the section, so a paragraph inside one does not reclassify itself.
+  Where the job is unclear, ask what the reader of that section is doing:
+  executing, or deciding whether to agree.
 
 ## Reference documents
 
@@ -66,6 +80,11 @@ agree.
 - **Say how you know.** Mark each claim: measured, built, cited, estimated,
   assumed. State a confidence boundary where one exists. A rule is not a
   claim and takes no marker; its reason belongs under Reference documents.
+- **A derivative section cites its source once.** Where every claim in a section
+  comes from one named source, name it in the section's first sentence and drop
+  the per-claim markers, because marking every sentence of a summary reports
+  nothing. A claim needing a marker of its own is a new claim, and a new claim
+  does not belong in a derivative section.
 - Name the strongest objection and answer it in a sentence.
 - Concede a real point in one sentence and carry on.
 - A section with no finding is background. Move it to an appendix or cut it.
@@ -133,11 +152,9 @@ stays in the section it was supposed to leave.
   document whose rules carry no reason at all has emptied itself into its
   appendix.
 
-Where whatever serves this document can return part of it, declare a reading
-profile that lists the main sections and omits the appendix. That profile is
-what the reading surface means for this document, and it is what a reader who
-asked for the rules should receive. Where no such mechanism exists, the
-obligation falls to the document's shape instead: the appendix goes last, so a
+A document's reading profile omits its appendix, so a reader who asked for the
+rules receives them without the argument behind them. Where no profile is
+declared, shape carries the obligation instead: the appendix goes last, and a
 reader who stops at the rules has already read everything the document asks of
 them.
 
@@ -234,6 +251,11 @@ those decisions, the host wins.
 - **Treat every heading as a section boundary.** Anything that reads part of a
   document splits it at headings, so a subheading inside a section can cut that
   section short. Group items within a section by order, not by subheading.
+- **A registered heading is an identifier.** Where the host resolves a document
+  by shape, tooling retrieves a section by its heading text, so changing the
+  text breaks every caller. Classify the citers and rename on the terms set out
+  under **Identifiers**, or leave the heading alone and file the rename as work
+  of its own.
 - **Decision records are immutable.** Where a records policy requires a
   supersession marker to stand, *rewrite, do not annotate* yields to it. Keep
   the corrected claim off the rule surface instead, so a reader who takes only
@@ -244,6 +266,9 @@ whatever the host requires of document structure.
 
 ## Checks
 
+Counts run over the body defined under **Checks** in
+`voice-business-technical.md`.
+
 | Check | Look for | Act when |
 |---|---|---|
 | reader routing | an opening that names the reader | missing |
@@ -252,7 +277,7 @@ whatever the host requires of document structure.
 | slug format | one hyphen minimum, no part under three characters | any |
 | unresolved slug | a slug cited in prose that is in no id-space | any |
 | supersession in place | `~~`, "superseded by", "originally" | any |
-| unmarked claim | a load-bearing claim with no measured/built/cited marker | any |
+| unmarked claim | a load-bearing claim with no measured/built/cited marker | any, in an explanatory section that is not derivative |
 | reading surface | words a reader gets by default, before and after | any increase in a rewrite for form |
 | orphan appendix entry | an appendix subsection whose slug names no rule | any |
 | unfinished merge | `BELONGS ELSEWHERE` in a committed document | any |

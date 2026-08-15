@@ -81,7 +81,11 @@ its two sides are not equally important.
 
 ## Checks
 
-Counts over the document body. Each is a regex, so a script can report them.
+Each check is a regex, so a host can report it. Counts run over prose
+paragraphs. Exclude frontmatter, fenced code, tables, headings, and list items,
+including the em dash that separates a list label from its value. A document
+built mostly from label bullets otherwise fails dash density on its formatting
+rather than on its prose.
 
 | Check | Look for | Act when |
 |---|---|---|
@@ -92,9 +96,13 @@ Counts over the document body. Each is a regex, so a script can report them.
 | fragments | sentences carrying no finite verb | advisory — no regex detects this reliably, so read for it |
 | adjective as evidence | significant, substantial, considerable, clear, key | any |
 | closing restatement | last sentence repeats the paragraph's first | any |
-| dash density | `—` in prose, excluding tables and headings | over 5 per 1,000 words |
+| dash density | `—` in prose | over 5 per 1,000 words |
 
 A count finds what a read-through hides.
+
+These checks are specified for a host to implement. This plugin ships prose and
+no scripts, so installing it adds no executable surface; a project that wants
+them enforced builds them against the body defined above.
 
 Do not write toward a readability score. Sentence length is the half of one that works,
 and it is already a check above; the other half rewards a short vague word over a precise

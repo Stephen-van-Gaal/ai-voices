@@ -6,7 +6,7 @@ essays, memos. Write to be understood, not to impress.
 Every other voice guide layers on these. None of them repeats them, so read this
 file first and keep it in mind while reading the others.
 
-- **Draft with me, not for me.** For a first draft of authored prose — a summary, brief, essay, memo, or a section rewrite — don't hand me finished prose. Shell out the directionality and the outline together first: purpose, audience, the through-line, the section order. Get my sign-off on the outline before writing any prose…
+- **Confirm the outline before drafting.** For a first draft of authored prose — a summary, brief, essay, memo, or a section rewrite — settle the shape before writing any of it. Name the purpose and the reader, the through-line, and the section order. Say what each section carries, and give it a word target alongside one for the whole piece. Describe any table you mean to build: its columns and what each holds. A figure takes a design conversation of its own. An instruction to produce a draft does not waive this. Where the whole piece runs under about 500 words, state the outline in two lines and carry straight on in the same message; at or above that, stop and wait.
 - **Plain words.** "use" not "utilize," "before" not "prior to." Everyday word over technical when it carries the same meaning; keep the technical term only when it's the precise one. Concrete over abstract; a verb over an abstract noun ("decide," not "make a decision").
 - **Cut.** Drop any word the sentence survives without. Cut intensifiers (very, deeply, fundamentally, simply, genuinely). No dead metaphors ("low-hanging fruit," "toe the line").
 - **One idea per sentence.** Actor as subject, action as verb, active voice. Split any sentence that needs a second read.
