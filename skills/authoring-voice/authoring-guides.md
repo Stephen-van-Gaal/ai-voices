@@ -8,20 +8,15 @@ They sit beside this file and refer to each other by bare filename.
 
 ## Which guide
 
+Read `voice-base.md` whatever you are writing. It holds the rules the others
+layer on, none of them repeats it, and skipping it means writing without most of
+the rules. Then take the row below that matches.
+
 | What you are writing | Read |
 |---|---|
-| anything at all — the rules underneath everything | `voice-base.md` |
-| prose inside a code repository: how it sounds | `voice-business-technical.md` |
-| a document with a shape: what it carries and in what order | `document-types-code-repo.md` |
+| prose inside a code repository | `voice-business-technical.md` for how it sounds, and `document-types-code-repo.md` for what it carries and in what order |
 | an essay, where persuasion is the job | `voice-professional-essay.md` |
 | a grant application or a study protocol | `voice-scientific.md` |
-
-`voice-base.md` applies underneath all of them and none of them repeats it, so
-skipping it means writing without most of the rules.
-
-Most work inside a repository draws on `voice-base.md` for the rules,
-`voice-business-technical.md` for how the prose sounds, and
-`document-types-code-repo.md` for what the document owes its reader.
 
 The essay guide does not apply inside a repository. Do not reach for it because
 the writing feels important.
