@@ -27,6 +27,12 @@ Where an obligation here conflicts with a voice preference, this file wins.
   came to make.
 - **Name the vocabulary you assume.** Say in the opening what the reader is
   expected to know already. Gloss anything outside that once, at first use.
+- **Where two readers share the words, gloss to the narrower vocabulary.** A
+  document an agent executes and a person approves has one set of sentences and
+  two audiences, and the agent's assumed vocabulary is the larger one. Take the
+  smaller: a term the approver cannot resolve makes the approval a formality.
+  This is not a trade against precision. The agent needs the exact term, so keep
+  the term and gloss it.
 - **A long document carries a contents section.** Past roughly 300 lines or ten
   top-level sections a reader needs navigation. Generate it, and never maintain
   it by hand: a hand-written index is a second copy of the heading list, and it
@@ -125,6 +131,38 @@ may still move a long reason out of its section: cut it from the section and
 emit the appendix entry for merge. The reading surface drops immediately and
 the appendix arrives when the handoff is applied.
 
+## Template guidance
+
+A template carries prose addressed to whoever fills it, and that prose does not
+survive into the finished document. It sits in the slot it governs, is read at
+the moment of writing, and goes when the slot is filled. Its reader is writing
+rather than reading, so it takes the imperative. `BELONGS ELSEWHERE` under
+**Scope of a rewrite** is the one-off form of the same thing; this is the
+standing form.
+
+**The template is the only prose its author ever sees.** A rule settled in
+whatever the template was generated from, and not emitted with it, reaches
+nobody.
+
+- **Put an instruction where the decision is made.** A rule about a field belongs
+  beside that field rather than in a preamble, because an author reads the slot
+  they are filling and skims whatever came before it.
+- **Give a rule that binds every slot a home the template also carries.** Per-slot
+  guidance has nowhere to put a rule about the whole document, so emit those once
+  at the head of the template. Without that place they are settled in the source
+  and broken in every copy.
+- **Say what an empty slot means.** Emptiness is a signal in some slots and a
+  defect in others, and no reader tells which by looking. Where it is legitimate,
+  the guidance says so. Otherwise an author writes prose explaining the emptiness,
+  which is the one thing a filled slot must not carry.
+- **Make guidance removable, and say whether it is removed.** Mark it so a reader
+  tells it from content, and state whether the author deletes it on filling or it
+  stays for good. A block still present with nothing beneath it is then an
+  unfilled slot: visible, countable, and cheap to check.
+- **Instruct; do not explain.** Guidance says how to fill the slot, not what the
+  slot means to a reader. One that explains teaches its author to write
+  documentation into the document.
+
 ## The appendix
 
 Where a document carries more justification than its rules can hold, it takes
@@ -157,6 +195,28 @@ rules receives them without the argument behind them. Where no profile is
 declared, shape carries the obligation instead: the appendix goes last, and a
 reader who stops at the rules has already read everything the document asks of
 them.
+
+## Records
+
+A changelog, a decision log and an appendix all hold material that has left the
+reading surface, and only the appendix carries a rule bounding what may land
+there. The other two take the same one.
+
+- **A changelog row records; it does not argue.** Date, version, and one clause
+  naming what changed and where. The argument for a rule now in force belongs in
+  the appendix beside that rule, and the argument for a rule that was replaced
+  goes with it.
+- **A decision row states the decision, not the deliberation.** What was decided,
+  when, and the fact that settled it. The options weighed and abandoned are what
+  the row replaces, not what it holds.
+- **A record that restates the document is not a record.** Where a row's argument
+  already stands in the section it changed, the row keeps its clause and the
+  duplicate goes. Two copies of one reason drift, and nothing tells a reader
+  which is current.
+
+Rules that push material off the surface are what make this necessary. Send a
+long reason to the appendix and a superseded claim to the changelog, and both
+destinations grow without anything sizing them.
 
 ## Identifiers
 
@@ -282,4 +342,5 @@ Counts run over the body defined under **Checks** in
 | orphan appendix entry | an appendix subsection whose slug names no rule | any |
 | unfinished merge | `BELONGS ELSEWHERE` in a committed document | any |
 | reasonless rule | a rule with neither an inline clause nor an appendix entry | any |
+| arguing record | a changelog or decision row over 40 words | any |
 | unglossed term | a term outside the stated assumed vocabulary, used bare | any |
