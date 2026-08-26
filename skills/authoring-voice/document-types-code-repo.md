@@ -131,6 +131,38 @@ may still move a long reason out of its section: cut it from the section and
 emit the appendix entry for merge. The reading surface drops immediately and
 the appendix arrives when the handoff is applied.
 
+## Template guidance
+
+A template carries prose addressed to whoever fills it, and that prose does not
+survive into the finished document. It sits in the slot it governs, is read at
+the moment of writing, and goes when the slot is filled. Its reader is writing
+rather than reading, so it takes the imperative. `BELONGS ELSEWHERE` under
+**Scope of a rewrite** is the one-off form of the same thing; this is the
+standing form.
+
+**The template is the only prose its author ever sees.** A rule settled in
+whatever the template was generated from, and not emitted with it, reaches
+nobody.
+
+- **Put an instruction where the decision is made.** A rule about a field belongs
+  beside that field rather than in a preamble, because an author reads the slot
+  they are filling and skims whatever came before it.
+- **Give a rule that binds every slot a home the template also carries.** Per-slot
+  guidance has nowhere to put a rule about the whole document, so emit those once
+  at the head of the template. Without that place they are settled in the source
+  and broken in every copy.
+- **Say what an empty slot means.** Emptiness is a signal in some slots and a
+  defect in others, and no reader tells which by looking. Where it is legitimate,
+  the guidance says so. Otherwise an author writes prose explaining the emptiness,
+  which is the one thing a filled slot must not carry.
+- **Make guidance removable, and say whether it is removed.** Mark it so a reader
+  tells it from content, and state whether the author deletes it on filling or it
+  stays for good. A block still present with nothing beneath it is then an
+  unfilled slot: visible, countable, and cheap to check.
+- **Instruct; do not explain.** Guidance says how to fill the slot, not what the
+  slot means to a reader. One that explains teaches its author to write
+  documentation into the document.
+
 ## The appendix
 
 Where a document carries more justification than its rules can hold, it takes
