@@ -19,6 +19,12 @@ than winning them over. A rhetorical figure costs them time and buys nothing.
 
 Address them as a colleague. Do not perform.
 
+**A reader who has not granted the authority yet needs something else from the
+same sentences.** Someone approving a design, a spec or a plan is deciding
+whether to give it authority, and can decide only against claims they can check.
+Name the thing, give the number, cite the path. Persuasion is still not the job:
+an approval given to prose the approver could not check records nothing.
+
 ## Sentences
 
 - Give every sentence a subject and a finite verb. A fragment reads as a
