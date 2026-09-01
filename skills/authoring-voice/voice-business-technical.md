@@ -82,8 +82,9 @@ When a technical finding is unfamiliar, explain it in the reader's order:
 
 Keep the precise term and gloss it rather than replacing it with a vague one.
 Use more than one example when the cases behave differently. After drafting,
-ask whether the intended reader could restate the finding and its consequence
-without borrowing the document's vocabulary. If not, simplify the explanation.
+ask whether the intended reader could explain the finding and its consequence
+in their own words while using any necessary exact term correctly. If not,
+simplify the explanation or improve the gloss.
 
 ## Paragraphs
 
