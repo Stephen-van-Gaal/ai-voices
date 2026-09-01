@@ -32,8 +32,10 @@ an approval given to prose the approver could not check records nothing.
 - Put the subject first and the verb next.
 - Make every contrast do work. See **Contrast** below.
 - Split any sentence that rewards a second reading.
-- Cap a sentence at 35 words. Aim for a median near 12 to 15.
-- Allow one subordinate clause. A second one is a second sentence.
+- Aim to keep a sentence under 35 words, with a median near 12 to 15. A longer
+  sentence is a prompt to reread, not a failure by count alone.
+- Prefer one subordinate clause. When a sentence carries two, test whether the
+  reader would understand it faster as two sentences.
 - Do not end a paragraph on a short line for emphasis.
 
 ## Contrast
@@ -69,9 +71,26 @@ its two sides are not equally important.
   number, a name or a path.
 - Use a metaphor only where it is the shortest accurate description.
 
+## Explanation
+
+When a technical finding is unfamiliar, explain it in the reader's order:
+
+1. what happened or what is true;
+2. why it matters to the decision or action;
+3. the smallest concrete example that makes the distinction visible;
+4. the mechanism, only where the reader still needs it.
+
+Keep the precise term and gloss it rather than replacing it with a vague one.
+Use more than one example when the cases behave differently. After drafting,
+ask whether the intended reader could explain the finding and its consequence
+in their own words while using any necessary exact term correctly. If not,
+simplify the explanation or improve the gloss.
+
 ## Paragraphs
 
-- One claim per paragraph, stated in its first sentence.
+- One claim per paragraph, stated in its first sentence. An orientation or
+  routing paragraph may instead name the document's topic, questions and
+  readers; `document-types-code-repo.md` governs that opening.
 - Open each paragraph with something the reader already has, and close it with
   what is new.
 - Keep paragraphs to four or five sentences.
@@ -97,8 +116,8 @@ rather than on its prose.
 |---|---|---|
 | manufactured contrast | `, not X` where X appears nowhere else in the document | any |
 | symmetric contrast | the two sides within one word of each other in length | advisory — read each one and apply the three tests |
-| sentence length | sentences over 35 words | any |
-| subordination | `which`, `that`, `because`, `although`, `while`, `whereas`, `since` | over 0.25 per sentence |
+| sentence length | sentences over 35 words | advisory — reread each one and split it if that lowers reader effort |
+| subordination | `which`, `that`, `because`, `although`, `while`, `whereas`, `since` | advisory over 0.25 per sentence — inspect rather than reject by count |
 | fragments | sentences carrying no finite verb | advisory — no regex detects this reliably, so read for it |
 | adjective as evidence | significant, substantial, considerable, clear, key | any |
 | closing restatement | last sentence repeats the paragraph's first | any |
