@@ -1,8 +1,9 @@
 # Document types: grants and protocols
 
 What a grant application or a study protocol must carry, and in what order.
-Voice (precision, claims, hedging, tense) is `voice-scientific.md`. Where an
-obligation here conflicts with a voice preference, this file wins.
+Voice is `voice-scientific.md`: precision, claims, hedging, tense, and which
+sections may argue and which only report. Where an obligation here conflicts
+with a voice preference, this file wins.
 
 The reader is a reviewer or a fellow clinician deciding whether to trust the
 work and fund or act on it. They read against a shape they already expect, and
@@ -24,8 +25,7 @@ they judge each part on its own.
 
 ## Significance
 
-- **Open on the size of the problem, shown with evidence.** This is the one
-  section that may argue and motivate.
+- **Open on the size of the problem, shown with evidence.**
 - **Locate the study against a real gap, stated fairly.** Characterize earlier
   instruments and studies accurately, credit what they got right, then name
   the specific limitation your work addresses. "Needs-grounded rather than
@@ -36,7 +36,6 @@ they judge each part on its own.
 
 ## Methods and results
 
-- **Report; do not persuade.** These sections stay maximally plain.
 - **Name what the design can and cannot deliver** in the section that
   describes it, so a reviewer does not meet the limit first in the discussion.
 

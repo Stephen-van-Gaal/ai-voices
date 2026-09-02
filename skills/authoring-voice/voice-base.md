@@ -27,6 +27,8 @@ guide needs one of these rules, it cites this file.
 ## Sentences
 
 - **One idea per sentence.** Split any sentence that needs a second read.
+- **Prefer one subordinate clause.** Where a sentence carries two, test
+  whether the reader would understand it faster as two sentences.
 - **Actor as subject, action as verb, active voice.** Say who does what. Use
   the passive only where the actor is unknown or beside the point.
 - **End on the point, not on a cadence.** The words that carry the point go

@@ -31,15 +31,14 @@ nothing.
 
 ## Sentences
 
+`voice-base.md` holds the rules on one idea per sentence, subordination and
+active voice. These add to them.
+
 - Give every sentence a subject and a finite verb. A fragment reads as a
   pronouncement.
 - Put the subject first and the verb next.
 - Make every contrast do work. See **Contrast** below.
-- Split any sentence that rewards a second reading.
-- Aim to keep a sentence under 35 words, with a median near 12 to 15. A longer
-  sentence is a prompt to reread, not a failure by count alone.
-- Prefer one subordinate clause. When a sentence carries two, test whether the
-  reader would understand it faster as two sentences.
+- Aim to keep a sentence under 35 words, with a median near 12 to 15.
 - Do not end a paragraph on a short line for emphasis.
 
 ## Contrast
@@ -91,13 +90,13 @@ simplify the explanation or improve the gloss.
 
 ## Paragraphs
 
+`voice-base.md` holds the rules on chunking, lists, and opening with what the
+reader already has. These add to them.
+
 - One claim per paragraph, stated in its first sentence. An orientation or
   routing paragraph may instead name the document's topic, questions and
   readers; `document-types-code-repo.md` governs that opening.
-- Open each paragraph with something the reader already has, and close it with
-  what is new.
 - Keep paragraphs to four or five sentences.
-- Use a list for real enumeration. Do not use one to break up an argument.
 
 ## Figures to avoid
 

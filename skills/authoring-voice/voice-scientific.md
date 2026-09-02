@@ -10,6 +10,9 @@ This guide adds what a reviewer needs: claims they can check, methods they
 could repeat, and a clear line between what you found and what you infer.
 Plain language still wins; precision wins more.
 
+These are guidelines rather than rules: where a particular word or
+construction reads more clearly to a reviewer, use it.
+
 ## Precision and consistency
 
 - **Call the same thing the same name every time.** A *participant* is not
