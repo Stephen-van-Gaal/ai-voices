@@ -31,18 +31,24 @@ Where an obligation here conflicts with a voice preference, this file wins.
   to get wrong, and put it first.
 - **Size it to its reader.** Cut what does not serve the decision the reader
   came to make.
-- **Name the vocabulary you assume.** Say in the opening what the reader is
-  expected to know already. Gloss anything outside that once, at first use.
-- **Where two readers share the words, gloss to the narrower vocabulary.** A
-  document an agent executes and a person approves has one set of sentences and
-  two audiences, and the agent's assumed vocabulary is the larger one. Take the
-  smaller: a term the approver cannot resolve makes the approval a formality.
-  This is not a trade against precision. The agent needs the exact term, so keep
-  the term and gloss it.
+- **Name the vocabulary you assume.** Say in the opening who the document is
+  written for, in words rather than by profile filename. An artifact with no
+  opening of its own carries no such sentence, and `authoring-guides.md` says
+  which artifacts those are. The matching
+  profile's vocabulary, plus the project vocabulary in the repository's
+  `AI-VOICES.md` where one exists, is what the reader is assumed to hold.
+  Gloss anything outside both once, at first use.
+  A term in either exempts the term, not a trap in it: where its meaning
+  differs from its visible form, say so.
+- **Where two readers share the words, gloss to the narrower vocabulary.**
+  `reader-owner-and-agents.md` is the usual pair: the agent's vocabulary is
+  the larger one, so take the owner's. This is not a trade against precision.
+  The agent needs the exact term, so keep the term and gloss it.
 - **A long document carries a contents section.** Past roughly 300 lines or ten
   top-level sections a reader needs navigation. Generate it, and never maintain
   it by hand: a hand-written index is a second copy of the heading list, and it
-  goes stale the first time a heading moves.
+  goes stale the first time a heading moves. Where the host has no generator,
+  omit the section and let the opening's routing carry the navigation.
 - **A section takes the class of its job, not the file's.** A reference document
   may hold an explanatory section, and each follows the rules of its own class.
   The unit is the section, so a paragraph inside one does not reclassify itself.
@@ -51,7 +57,9 @@ Where an obligation here conflicts with a voice preference, this file wins.
 
 ## Reference documents
 
-Specs, definitions, contracts, schemas, runbooks. The reader is executing.
+Specs, definitions, contracts, schemas, runbooks. The reader is executing:
+usually the agent half of `reader-owner-and-agents.md`, or
+`reader-data-analyst.md` for a definition or query note.
 
 - Write a rule as a condition and an action: *"If two things are different kinds
   of thing clinically, model them as separate entities."* Or as an instruction:
@@ -68,7 +76,8 @@ Specs, definitions, contracts, schemas, runbooks. The reader is executing.
   growing into an essay. Where a run is not homogeneous — some items carry a
   status and an open question, others are cross-cutting rules with neither —
   slot the ones that fit and leave the rest. A forced slot is worse than none.
-- Use a table when every item carries the same fields.
+- Use a table when every item carries the same fields. `affordances.md` says
+  which format fits which reader task.
 - **Do not imply more certainty than you have.** Reference material takes no
   evidence marker, but where a rule or note rests on contested or unresolved
   evidence, say so in the sentence: what is established, what merely
@@ -85,7 +94,8 @@ Specs, definitions, contracts, schemas, runbooks. The reader is executing.
 
 Design rationale, architecture and vision prose, explainers, framing notes,
 papers, longer pull-request descriptions. The reader is deciding whether to
-agree.
+agree: usually `reader-owner.md`, or the owner half of
+`reader-owner-and-agents.md`.
 
 - One governing claim per section, stated in its first sentence. Supporting
   claims supply its evidence rather than opening a second argument.
@@ -260,6 +270,9 @@ supplies its family, so the slug carries no prefix of its own. Prose cites the
 slug directly, because it already reads as English.
 
 - Every slug resolves in the id-space that owns it.
+- A slug cited from another document carries a clause saying what it holds.
+  It resolves in its id-space and nowhere in the reader's head, and a reader
+  who has to open the other document to follow the sentence has left this one.
 - A slug runs to at least two words, and no part of it is an abbreviation.
 - A slug that has stopped being accurate needs a rename. Classify who cites
   the id before starting, because that decides what is possible:
@@ -317,7 +330,9 @@ against, so none of them applies to one.
   by default: what a declared reading profile returns, or the whole document
   where none is declared; at section scope it is the section as delivered.
   *Total* is everything the rewrite produces, emitted content included.
-  *Emitted* is what goes to handoff blocks. If surface or total grows
+  *Emitted* is what goes to handoff blocks. Count all three over the whole
+  surface, tables and lists included; the prose-paragraph body defined under
+  **Checks** serves the voice counts only. If surface or total grows
   materially, name the reader need the added words serve. Relocating prose to
   an appendix lowers neither total effort nor total size, so do not report it as
   a reduction.
@@ -368,16 +383,17 @@ Counts run over the body defined under **Checks** in
 
 | Check | Look for | Act when |
 |---|---|---|
-| reader routing | an opening that names the reader | missing |
+| reader routing | an opening that names the reader | missing, where the document has an opening of its own |
 | conclusion first | each substantive section's first sentence states its finding | any substantive section without one; exclude orientation and routing sections |
 | numeric id | `[A-Z]{1,2}[0-9]+` outside a historical record | document scope with every live citer in scope; never fires at section scope |
 | slug format | one hyphen minimum, no part under three characters | any |
 | unresolved slug | a slug cited in prose that is in no id-space | any |
+| bare cited slug | a slug from another document with no clause beside it saying what it holds | any |
 | supersession in place | `~~`, "superseded by", "originally" | any |
 | unmarked claim | a load-bearing claim not covered at the placement and granularity required by the host evidence scheme; where none exists, no measured/built/cited/estimated/assumed marker | any, in an explanatory section that is not derivative |
-| reading surface | words a reader gets by default, before and after | any material increase with no named reader need |
+| reading surface | words a reader gets by default, before and after, counted over the whole document rather than the prose body | any material increase with no named reader need |
 | orphan appendix entry | an appendix subsection whose slug names no rule | any |
 | unfinished merge | `BELONGS ELSEWHERE` in a committed document | any |
 | reasonless rule | a rule with neither an inline clause nor an appendix entry | any |
 | arguing record | a changelog or decision row over 40 words | advisory — inspect for deliberation, duplication or procedural history rather than cutting by count |
-| unglossed term | a term outside the stated assumed vocabulary, used bare | any |
+| unglossed term | a term outside the named reader profile's vocabulary and the project vocabulary, used bare | any |

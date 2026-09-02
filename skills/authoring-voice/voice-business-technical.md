@@ -1,7 +1,8 @@
 # Voice: business-technical
 
 How to sound when writing for colleagues who have to act on what you wrote.
-Applies to everything written inside a working repository.
+Applies to everything written inside a working repository, and to a report or
+brief written for a named reader outside one.
 
 **Scope.** This file governs prose choices: register, sentences, words,
 paragraph flow. It does not say what a document must contain, which sections it
@@ -13,29 +14,32 @@ and a voice preference conflict, the obligation wins.
 
 ## Register
 
-The reader is a colleague, mid-task, who will act on what you wrote. They
-already accept that the document has authority, so you are informing them rather
-than winning them over. A rhetorical figure costs them time and buys nothing.
+The reader is whoever the document names, and the reader profiles
+(`reader-*.md`) say what each already holds and can check. Inside a repository
+that is usually `reader-owner-and-agents.md`: a colleague, mid-task, who will
+act on what you wrote. They already accept that the document has authority, so
+you are informing them rather than winning them over. A rhetorical figure costs
+them time and buys nothing.
 
 Address them as a colleague. Do not perform.
 
 **A reader who has not granted the authority yet needs something else from the
-same sentences.** Someone approving a design, a spec or a plan is deciding
-whether to give it authority, and can decide only against claims they can check.
-Name the thing, give the number, cite the path. Persuasion is still not the job:
-an approval given to prose the approver could not check records nothing.
+same sentences.** `reader-owner.md` approving a design, a spec or a plan is
+deciding whether to give it authority, and can decide only against claims they
+can check. Name the thing, give the number, cite the path. Persuasion is still
+not the job: an approval given to prose the approver could not check records
+nothing.
 
 ## Sentences
+
+`voice-base.md` holds the rules on one idea per sentence, subordination and
+active voice. These add to them.
 
 - Give every sentence a subject and a finite verb. A fragment reads as a
   pronouncement.
 - Put the subject first and the verb next.
 - Make every contrast do work. See **Contrast** below.
-- Split any sentence that rewards a second reading.
-- Aim to keep a sentence under 35 words, with a median near 12 to 15. A longer
-  sentence is a prompt to reread, not a failure by count alone.
-- Prefer one subordinate clause. When a sentence carries two, test whether the
-  reader would understand it faster as two sentences.
+- Aim to keep a sentence under 35 words, with a median near 12 to 15.
 - Do not end a paragraph on a short line for emphasis.
 
 ## Contrast
@@ -87,13 +91,13 @@ simplify the explanation or improve the gloss.
 
 ## Paragraphs
 
+`voice-base.md` holds the rules on chunking, lists, and opening with what the
+reader already has. These add to them.
+
 - One claim per paragraph, stated in its first sentence. An orientation or
   routing paragraph may instead name the document's topic, questions and
   readers; `document-types-code-repo.md` governs that opening.
-- Open each paragraph with something the reader already has, and close it with
-  what is new.
 - Keep paragraphs to four or five sentences.
-- Use a list for real enumeration. Do not use one to break up an argument.
 
 ## Figures to avoid
 
@@ -117,7 +121,7 @@ rather than on its prose.
 | sentence length | sentences over 35 words | advisory — reread each one and split it if that lowers reader effort |
 | subordination | `which`, `that`, `because`, `although`, `while`, `whereas`, `since` | advisory over 0.25 per sentence — inspect rather than reject by count |
 | fragments | sentences carrying no finite verb | advisory — no regex detects this reliably, so read for it |
-| adjective as evidence | significant, substantial, considerable, clear, key | any |
+| adjective as evidence | significant, substantial, considerable, clear, key | any, outside a quoted term of art or a heading the host fixes |
 | closing restatement | last sentence repeats the paragraph's first | any |
 | dash density | `—` in prose | over 5 per 1,000 words |
 
