@@ -36,7 +36,9 @@ look up, compare, copy or decide, chosen by the reader's task.
    routes the path to; else its default reader; else the table below. Read
    that profile whole. The document's opening names its reader in words; the
    profile's filename stays in the request and the routing, because the
-   document's readers do not have these guides.
+   document's readers do not have these guides. Where the host fixes the first
+   section's heading and content, the reader sentence goes in the provenance
+   line or opening block the host leaves to the author.
 4. **Pick the document type and the voice** from the table.
 5. **Read `affordances.md`** when the document will carry a table, a glossary,
    an example or a figure, or when the reader profile names an affordance.
