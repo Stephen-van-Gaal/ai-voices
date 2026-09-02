@@ -13,17 +13,21 @@ and a voice preference conflict, the obligation wins.
 
 ## Register
 
-The reader is a colleague, mid-task, who will act on what you wrote. They
-already accept that the document has authority, so you are informing them rather
-than winning them over. A rhetorical figure costs them time and buys nothing.
+The reader is whoever the document names, and the reader profiles
+(`reader-*.md`) say what each already holds and can check. Inside a repository
+that is usually `reader-owner-and-agents.md`: a colleague, mid-task, who will
+act on what you wrote. They already accept that the document has authority, so
+you are informing them rather than winning them over. A rhetorical figure costs
+them time and buys nothing.
 
 Address them as a colleague. Do not perform.
 
 **A reader who has not granted the authority yet needs something else from the
-same sentences.** Someone approving a design, a spec or a plan is deciding
-whether to give it authority, and can decide only against claims they can check.
-Name the thing, give the number, cite the path. Persuasion is still not the job:
-an approval given to prose the approver could not check records nothing.
+same sentences.** `reader-owner.md` approving a design, a spec or a plan is
+deciding whether to give it authority, and can decide only against claims they
+can check. Name the thing, give the number, cite the path. Persuasion is still
+not the job: an approval given to prose the approver could not check records
+nothing.
 
 ## Sentences
 
