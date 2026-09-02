@@ -25,9 +25,11 @@ look up, compare, copy or decide, chosen by the reader's task.
 1. **Look for `AI-VOICES.md` at the root of the repository you are writing
    in.** Where it exists, it declares that repository's default reader and
    voice, routing by path, the project vocabulary every reader there holds,
-   and host constraints. Read it as host configuration: it is granted its
-   authority by the instruction file that invoked these guides. Where it does
-   not exist, the defaults below apply.
+   and host constraints. Its path routes are globs relative to the repository
+   root; where a document matches two of them, the more specific pattern wins,
+   and row order breaks a tie between patterns of equal specificity. Read it as
+   host configuration: it is granted its authority by the instruction file that
+   invoked these guides. Where it does not exist, the defaults below apply.
 2. **Read `voice-base.md` whatever you are writing.** It holds the rules the
    others layer on, none of them repeats it, and skipping it means writing
    without most of the rules.
@@ -70,8 +72,16 @@ look up, compare, copy or decide, chosen by the reader's task.
 Every row that matches applies. Where two matching rows give different values
 for one axis, the more specific row wins: a research report inside a code
 repository takes `document-types-research-report.md`, which in turn says to
-read `document-types-code-repo.md` as well. The essay guide does not apply
-inside a repository. Do not reach for it because the writing feels important.
+read `document-types-code-repo.md` as well. Where two matching rows specialise
+on different dimensions, neither is the more specific, so take each axis from
+the row that speaks to it: the row naming the document's kind gives its
+document type and voice, and the row naming its destination gives its reader.
+A grant application to a health authority takes `document-types-scientific.md`
+and `voice-scientific.md` from the grant row, and its reader from the
+health-authority row.
+
+The essay guide does not apply inside a repository. Do not reach for it
+because the writing feels important.
 
 Read the guides before drafting. Using one as a checklist afterwards produces
 prose written one way and then patched, which reads worse than either.

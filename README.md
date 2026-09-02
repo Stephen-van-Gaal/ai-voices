@@ -30,7 +30,7 @@ reader; it takes a document type where one covers its kind.
 | document type | `document-types-code-repo.md` | What a document inside a repository carries and in what order. |
 | document type | `document-types-research-report.md` | The three reading surfaces of a research or analysis report. |
 | document type | `document-types-scientific.md` | What a grant or protocol carries and in what order. |
-| voice | `voice-business-technical.md` | How prose inside a repository sounds. |
+| voice | `voice-business-technical.md` | How prose inside a repository sounds, and a report or brief written for a named reader outside one. |
 | voice | `voice-professional-essay.md` | Essays, where persuasion is the job. Not for use inside a repository. |
 | voice | `voice-scientific.md` | How grant applications and study protocols sound. |
 | shared | `affordances.md` | Tables, glossaries, examples and diagrams, chosen by the reader's task. |

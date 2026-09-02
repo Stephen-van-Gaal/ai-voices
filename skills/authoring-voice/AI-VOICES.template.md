@@ -25,11 +25,9 @@ extension. Empty means the routing table decides. -->
 
 <!-- GUIDANCE: One row per path pattern. A document under that path takes the
 reader and document type given, unless the document names another reader in
-its opening. Write each pattern as a glob relative to the repository root, so
-`docs/**` matches everything under docs. Where a document matches two rows,
-the more specific pattern wins, and row order breaks a tie between patterns of
-equal specificity. This is the rule `authoring-guides.md` uses for its own
-table. Empty means only the defaults above apply. -->
+its opening. `authoring-guides.md` defines the pattern syntax and the
+precedence between overlapping rows, so those rules survive this comment being
+deleted. Empty means only the defaults above apply. -->
 
 | Path | Reader | Document type |
 |---|---|---|

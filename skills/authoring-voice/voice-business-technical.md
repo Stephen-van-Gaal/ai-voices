@@ -1,7 +1,8 @@
 # Voice: business-technical
 
 How to sound when writing for colleagues who have to act on what you wrote.
-Applies to everything written inside a working repository.
+Applies to everything written inside a working repository, and to a report or
+brief written for a named reader outside one.
 
 **Scope.** This file governs prose choices: register, sentences, words,
 paragraph flow. It does not say what a document must contain, which sections it

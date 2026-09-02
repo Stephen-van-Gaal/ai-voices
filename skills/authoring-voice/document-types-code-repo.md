@@ -32,7 +32,9 @@ Where an obligation here conflicts with a voice preference, this file wins.
 - **Size it to its reader.** Cut what does not serve the decision the reader
   came to make.
 - **Name the vocabulary you assume.** Say in the opening who the document is
-  written for, in words rather than by profile filename. The matching
+  written for, in words rather than by profile filename. An artifact with no
+  opening of its own carries no such sentence, and `authoring-guides.md` says
+  which artifacts those are. The matching
   profile's vocabulary, plus the project vocabulary in the repository's
   `AI-VOICES.md` where one exists, is what the reader is assumed to hold.
   Gloss anything outside both once, at first use.
@@ -381,7 +383,7 @@ Counts run over the body defined under **Checks** in
 
 | Check | Look for | Act when |
 |---|---|---|
-| reader routing | an opening that names the reader | missing |
+| reader routing | an opening that names the reader | missing, where the document has an opening of its own |
 | conclusion first | each substantive section's first sentence states its finding | any substantive section without one; exclude orientation and routing sections |
 | numeric id | `[A-Z]{1,2}[0-9]+` outside a historical record | document scope with every live citer in scope; never fires at section scope |
 | slug format | one hyphen minimum, no part under three characters | any |

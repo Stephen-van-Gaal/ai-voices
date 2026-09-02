@@ -16,7 +16,7 @@ to say. Each reader profile names the affordances that serve that reader.
 | Compare repeated subjects | Repeated cards, or a field table, with the same slots for every subject | Each subject can use the same slots, so differences stay visible. |
 | Avoid a tempting mistake | Boundary-case table: visible form, unsafe inference, information needed | The same surface form can mean different things. |
 | Act by role | Action table: reader, action, reason, hand-off | Different readers leave the document with different work. |
-| Copy something exactly | Code block for identifiers, paths, queries and commands | Always. An identifier in prose gets retyped wrong. |
+| Copy something exactly | Inline code for an identifier or path named in a sentence; a block for a query, a command, or anything copied as one unit | Always. An identifier retyped by hand gets retyped wrong. |
 | See how it goes | Worked example: the input, the steps, the output, with a known answer | The reader will apply the rule to a case the rule does not name. |
 | See a structure | Diagram, under **Diagrams** below | A flow, a sequence, or a set of relationships the reader would otherwise reconstruct from prose. |
 
