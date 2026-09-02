@@ -1,0 +1,36 @@
+{
+  "name": "ai-voices",
+  "version": "0.5.0+codex.20260902181051",
+  "description": "Writing guides for AI agents: who reads a document, what it must carry, and how it should sound.",
+  "author": {
+    "name": "Stephen van Gaal",
+    "email": "svangaal@gmail.com",
+    "url": "https://github.com/Stephen-van-Gaal"
+  },
+  "homepage": "https://github.com/Stephen-van-Gaal/ai-voices",
+  "repository": "https://github.com/Stephen-van-Gaal/ai-voices",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "writing",
+    "voice",
+    "style-guide",
+    "documentation",
+    "technical-writing"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Voices",
+    "shortDescription": "Audience-aware writing guides for AI agents.",
+    "longDescription": "Guides for choosing a document's reader, content, and voice before drafting.",
+    "developerName": "Stephen van Gaal",
+    "category": "Productivity",
+    "capabilities": [
+      "Skills"
+    ],
+    "websiteURL": "https://github.com/Stephen-van-Gaal/ai-voices",
+    "defaultPrompt": [
+      "Use the authoring-voice skill before drafting a repository document."
+    ],
+    "brandColor": "#0F766E"
+  }
+}

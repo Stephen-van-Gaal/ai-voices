@@ -83,6 +83,10 @@ When a technical finding is unfamiliar, explain it in the reader's order:
 3. the smallest concrete example that makes the distinction visible;
 4. the mechanism, only where the reader still needs it.
 
+When the conclusion depends on terms the reader does not hold, state the
+conclusion in familiar language and show the smallest example before naming
+the exact terms and mechanism.
+
 Keep the precise term and gloss it rather than replacing it with a vague one.
 Use more than one example when the cases behave differently. After drafting,
 ask whether the intended reader could explain the finding and its consequence

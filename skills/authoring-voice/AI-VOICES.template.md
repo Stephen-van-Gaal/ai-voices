@@ -9,12 +9,13 @@ its slot is filled. A GUIDANCE comment still present marks an unfilled slot. -->
 ## Default reader
 
 <!-- GUIDANCE: One reader profile from the guides (`reader-owner.md`,
-`reader-owner-and-agents.md`, `reader-health-authority-leader.md`,
-`reader-scientific-external.md`, `reader-data-analyst.md`) or one defined under
-Additional readers. Name it as the guides do, with the `.md` extension. A
-document that declares `reader` in an `ai-voices` frontmatter block, or names
-its own reader in its opening, overrides this. Empty means the routing table
-in `authoring-guides.md` decides. -->
+`reader-owner-and-agents.md`, `reader-clinical-data-decision-makers.md`,
+`reader-health-authority-leader.md`, `reader-scientific-external.md`,
+`reader-data-analyst.md`) or one defined under Additional readers. Name it as
+the guides do, with the `.md` extension. A document that declares `reader` in
+an `ai-voices` frontmatter block, or names its own reader in its opening,
+overrides this. Empty means the routing table in `authoring-guides.md`
+decides. -->
 
 ## Default voice
 
