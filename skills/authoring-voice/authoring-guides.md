@@ -14,7 +14,8 @@ the rules. Then take the row below that matches.
 
 | What you are writing | Read |
 |---|---|
-| prose inside a code repository | `voice-business-technical.md` for how it sounds, and `document-types-code-repo.md` for what it carries and in what order |
+| a research or analysis report inside a code repository | `voice-business-technical.md` for how it sounds, `voice-research-report.md` for its reader journey, and `document-types-code-repo.md` for what it carries and in what order |
+| other prose inside a code repository | `voice-business-technical.md` for how it sounds, and `document-types-code-repo.md` for what it carries and in what order |
 | an essay, where persuasion is the job | `voice-professional-essay.md` |
 | a grant application or a study protocol | `voice-scientific.md` |
 

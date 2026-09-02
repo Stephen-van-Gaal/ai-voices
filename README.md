@@ -20,6 +20,7 @@ other, and says where they yield.
 |---|---|
 | `voice-base.md` | The rules underneath everything. No other guide repeats them. |
 | `voice-business-technical.md` | How prose inside a repository sounds: register, sentences, words, flow. |
+| `voice-research-report.md` | How repository research reports layer orientation, decision, and verification for readers with different needs. |
 | `document-types-code-repo.md` | What a document carries and in what order. |
 | `voice-professional-essay.md` | Essays, where persuasion is the job. Not for use inside a repository. |
 | `voice-scientific.md` | Grant applications and study protocols. |
