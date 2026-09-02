@@ -16,7 +16,8 @@ Everything lives in `skills/authoring-voice/`. Start with `authoring-guides.md`:
 it routes you to the guides that apply, says how they resolve against each
 other, and says where they yield.
 
-The guides sit on three axes, and every document takes one guide from each.
+The guides sit on three axes. Every document takes a voice and at least one
+reader; it takes a document type where one covers its kind.
 
 | Axis | Guide | What it governs |
 |---|---|---|

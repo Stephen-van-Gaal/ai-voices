@@ -8,8 +8,8 @@ They sit beside this file and refer to each other by bare filename.
 
 ## The three axes
 
-Every document has a reader, a type and a voice, and each axis has its own
-guides.
+Every document has at least one reader and a voice, and most have a document
+type. Each axis has its own guides.
 
 - **Reader** (`reader-*.md`): who reads it, what they already hold, what they
   can check, and what costs their trust.
@@ -31,16 +31,29 @@ look up, compare, copy or decide, chosen by the reader's task.
 2. **Read `voice-base.md` whatever you are writing.** It holds the rules the
    others layer on, none of them repeats it, and skipping it means writing
    without most of the rules.
-3. **Pick the reader.** The one the request names, or the one a document
-   under revision already names in its opening; else the one `AI-VOICES.md`
-   routes the path to; else its default reader; else the table below. Read
-   that profile whole. The document's opening names its reader in words; the
-   profile's filename stays in the request and the routing, because the
-   document's readers do not have these guides. Where the host fixes the first
-   section's heading and content, the reader sentence goes in the provenance
-   line or opening block the host leaves to the author.
-4. **Pick the document type and the voice** from the table.
-5. **Read `affordances.md`** when the document will carry a table, a glossary,
+3. **Pick the reader, or the readers.** The one the request names, or the one
+   a document under revision already names in its opening; else the one
+   `AI-VOICES.md` routes the path to; else its default reader; else the table
+   below. A document written for two audiences takes both, which
+   `document-types-research-report.md` requires of a report with two
+   destinations. Read each named profile whole.
+4. **Where no profile covers the audience, write one before drafting.** An
+   essay names its own reader, and a request may name an audience no shipped
+   profile and no `AI-VOICES.md` profile covers. Fill the slots the shipped
+   profiles use: who they are, what they already hold, what they do with the
+   document, what they can check, their time and attention, what costs their
+   trust, the affordances that serve them, and a reader test.
+5. **Name the reader in the document's opening**, in words. The profile's
+   filename stays in the request and the routing, because the document's
+   readers do not have these guides. Where the host fixes the first section's
+   heading and content, the reader sentence goes in the provenance line or
+   opening block the host leaves to the author. An artifact with no opening of
+   its own carries no reader sentence: a commit message, a code comment, a
+   pull-request title. Its routing settles its reader.
+6. **Pick the document type and the voice.** Take the document type
+   `AI-VOICES.md` routes the path to, else the one the table gives. Take the
+   voice `AI-VOICES.md` declares as its default, else the one the table gives.
+7. **Read `affordances.md`** when the document will carry a table, a glossary,
    an example or a figure, or when the reader profile names an affordance.
 
 | What you are writing | Reader | Document type | Voice |
@@ -49,13 +62,16 @@ look up, compare, copy or decide, chosen by the reader's task.
 | other prose inside a code repository: README, commit message, code comment, pull-request body | `reader-owner-and-agents.md`, unless the document names another | `document-types-code-repo.md` | `voice-business-technical.md` |
 | a research or analysis report | the reader the request names; `reader-owner.md` by default | `document-types-research-report.md` | `voice-business-technical.md` |
 | a definition, query or dataset note an analyst will reuse | `reader-data-analyst.md` | `document-types-code-repo.md` | `voice-business-technical.md` |
-| a brief, proposal or report to a health authority | `reader-health-authority-leader.md` | `document-types-research-report.md` | `voice-business-technical.md` |
+| an evidence-based brief, proposal or report to a health authority | `reader-health-authority-leader.md` | `document-types-research-report.md` | `voice-business-technical.md` |
+| an operational brief or decision memo, where there is no research to report | `reader-health-authority-leader.md` | none | `voice-business-technical.md` |
 | a grant application or a study protocol | `reader-scientific-external.md` | `document-types-scientific.md` | `voice-scientific.md` |
 | an essay, where persuasion is the job | the reader you name | none | `voice-professional-essay.md` |
 
-Where two rows match, the reader the request names decides. The essay guide
-does not apply inside a repository. Do not reach for it because the writing
-feels important.
+Every row that matches applies. Where two matching rows give different values
+for one axis, the more specific row wins: a research report inside a code
+repository takes `document-types-research-report.md`, which in turn says to
+read `document-types-code-repo.md` as well. The essay guide does not apply
+inside a repository. Do not reach for it because the writing feels important.
 
 Read the guides before drafting. Using one as a checklist afterwards produces
 prose written one way and then patched, which reads worse than either.
