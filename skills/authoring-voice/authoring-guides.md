@@ -34,7 +34,9 @@ look up, compare, copy or decide, chosen by the reader's task.
 3. **Pick the reader.** The one the request names, or the one a document
    under revision already names in its opening; else the one `AI-VOICES.md`
    routes the path to; else its default reader; else the table below. Read
-   that profile whole, and name the profile in the document's opening.
+   that profile whole. The document's opening names its reader in words; the
+   profile's filename stays in the request and the routing, because the
+   document's readers do not have these guides.
 4. **Pick the document type and the voice** from the table.
 5. **Read `affordances.md`** when the document will carry a table, a glossary,
    an example or a figure, or when the reader profile names an affordance.

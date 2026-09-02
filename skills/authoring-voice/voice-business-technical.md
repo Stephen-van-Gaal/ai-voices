@@ -121,7 +121,7 @@ rather than on its prose.
 | sentence length | sentences over 35 words | advisory — reread each one and split it if that lowers reader effort |
 | subordination | `which`, `that`, `because`, `although`, `while`, `whereas`, `since` | advisory over 0.25 per sentence — inspect rather than reject by count |
 | fragments | sentences carrying no finite verb | advisory — no regex detects this reliably, so read for it |
-| adjective as evidence | significant, substantial, considerable, clear, key | any |
+| adjective as evidence | significant, substantial, considerable, clear, key | any, outside a quoted term of art or a heading the host fixes |
 | closing restatement | last sentence repeats the paragraph's first | any |
 | dash density | `—` in prose | over 5 per 1,000 words |
 

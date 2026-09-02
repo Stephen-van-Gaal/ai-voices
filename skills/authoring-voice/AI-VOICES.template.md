@@ -45,8 +45,10 @@ the reader profile is glossed at first use. -->
 
 <!-- GUIDANCE: What this repository's tooling has already decided: the
 evidence vocabulary (for instance measured, built, cited), heading rules,
-records policy, diagram format. These win over every guide. State each as a
-rule an agent can apply. Empty means the guides' defaults apply. -->
+records policy, diagram format, the id-spaces where a cited slug resolves,
+whether a contents generator exists, and the value set a frontmatter field
+such as tags takes. These win over every guide. State each as a rule an agent
+can apply. Empty means the guides' defaults apply. -->
 
 ## Additional readers
 

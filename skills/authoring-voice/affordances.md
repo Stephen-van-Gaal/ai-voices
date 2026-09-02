@@ -12,7 +12,7 @@ to say. Each reader profile names the affordances that serve that reader.
 | Stop after a minute | Summary block: the answer, why it matters, the decision it informs, the ask | The reader may read nothing else. It stands alone. |
 | Learn unfamiliar vocabulary | Glossary table: term, plain meaning, why it matters here | Three or more terms fall outside the reader's vocabulary. A gloss at first use still applies; the glossary is the lookup surface. |
 | Reach a destination | Decision path: question, yes destination, no destination | Answers are mutually exclusive, or the order of questions changes the result. |
-| Scan the whole model | Overview table with short cells | The table is an index to the explanation, not the explanation. |
+| Scan the whole model | Overview table with short cells | The table is an index to the explanation, not the explanation. A plain-meaning cell belongs in it. |
 | Compare repeated subjects | Repeated cards, or a field table, with the same slots for every subject | Each subject can use the same slots, so differences stay visible. |
 | Avoid a tempting mistake | Boundary-case table: visible form, unsafe inference, information needed | The same surface form can mean different things. |
 | Act by role | Action table: reader, action, reason, hand-off | Different readers leave the document with different work. |
@@ -25,7 +25,9 @@ to say. Each reader profile names the affordances that serve that reader.
 - **One sentence before it says what it holds and how to read it.** A table
   dropped in without one makes the reader work out its purpose from its cells.
 - **It replaces prose; it does not sit beside prose saying the same.** Two
-  copies of one fact drift.
+  copies of one fact drift. A gloss is not a copy of a fact: a plain-meaning
+  cell in an overview table, or a glossary entry that a card also defines,
+  serves the reader who stops at the index or the glossary, and stays.
 - **Keep table cells to a phrase or one sentence.** Where a subject needs
   longer cells, several caveats, or more fields than a reader can scan as one
   row, keep a compact overview as the index and move the explanation into
