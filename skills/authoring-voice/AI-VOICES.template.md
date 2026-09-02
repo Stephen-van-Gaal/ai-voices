@@ -8,23 +8,28 @@ its slot is filled. A GUIDANCE comment still present marks an unfilled slot. -->
 
 ## Default reader
 
-<!-- GUIDANCE: One reader profile name from the guides (reader-owner,
-reader-owner-and-agents, reader-health-authority-leader,
-reader-scientific-external, reader-data-analyst) or one defined under
-Additional readers. A document that names its own reader overrides this.
-Empty means the routing table in authoring-guides.md decides. -->
+<!-- GUIDANCE: One reader profile from the guides (`reader-owner.md`,
+`reader-owner-and-agents.md`, `reader-health-authority-leader.md`,
+`reader-scientific-external.md`, `reader-data-analyst.md`) or one defined under
+Additional readers. Name it as the guides do, with the `.md` extension. A
+document that names its own reader overrides this. Empty means the routing
+table in `authoring-guides.md` decides. -->
 
 ## Default voice
 
-<!-- GUIDANCE: One voice guide name (voice-business-technical,
-voice-scientific, voice-professional-essay). Empty means the routing table
-decides. -->
+<!-- GUIDANCE: One voice guide (`voice-business-technical.md`,
+`voice-scientific.md`, `voice-professional-essay.md`), named with the `.md`
+extension. Empty means the routing table decides. -->
 
 ## Routing by path
 
 <!-- GUIDANCE: One row per path pattern. A document under that path takes the
 reader and document type given, unless the document names another reader in
-its opening. Empty means only the defaults above apply. -->
+its opening. Write each pattern as a glob relative to the repository root, so
+`docs/**` matches everything under docs. Where a document matches two rows,
+the more specific pattern wins, and row order breaks a tie between patterns of
+equal specificity. This is the rule `authoring-guides.md` uses for its own
+table. Empty means only the defaults above apply. -->
 
 | Path | Reader | Document type |
 |---|---|---|
@@ -56,5 +61,6 @@ can apply. Empty means the guides' defaults apply. -->
 <!-- GUIDANCE: Define a reader in the same slots the guides use: who they are;
 what they already hold; what they do with the document; what they can check;
 time and attention; what costs their trust; affordances that serve them; a
-reader test. Name it reader-<something> so routing rows can cite it. Empty
-means only the guides' own readers exist here. -->
+reader test. Name it `reader-<something>.md`, so a routing row cites it the
+way it cites a shipped profile. Empty means only the guides' own readers exist
+here. -->
