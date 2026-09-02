@@ -22,7 +22,8 @@ other, and says where they yield.
 | `voice-business-technical.md` | How prose inside a repository sounds: register, sentences, words, flow. |
 | `document-types-code-repo.md` | What a document carries and in what order. |
 | `voice-professional-essay.md` | Essays, where persuasion is the job. Not for use inside a repository. |
-| `voice-scientific.md` | Grant applications and study protocols. |
+| `voice-scientific.md` | How grant applications and study protocols sound. |
+| `document-types-scientific.md` | What a grant or protocol carries and in what order. |
 
 The guides reference each other by bare filename and name nothing outside this
 directory, so they resolve wherever they are read from.

@@ -62,14 +62,13 @@ its two sides are not equally important.
 
 ## Words
 
-- Use the plain word. Keep a technical term where it is the precise one.
+`voice-base.md` holds the rules on plain words, cutting and metaphor. Two more
+apply here.
+
 - Name the concrete thing. Prefer "the source system" to "the world", and "the
   analyst querying this" to "a consumer".
-- Cut intensifiers and any word that asserts weight without supplying it:
-  significant, substantial, considerable, critical, key.
 - An adjective is not evidence. Where a claim needs support, the sentence needs a
   number, a name or a path.
-- Use a metaphor only where it is the shortest accurate description.
 
 ## Explanation
 
@@ -101,8 +100,7 @@ simplify the explanation or improve the gloss.
 - Rhetorical questions.
 - One-line paragraphs for drama.
 - A closing sentence that restates the paragraph.
-- Unmasking language: "strip it down", "read plainly", "smuggled in".
-- The AI-isms listed in `voice-base.md`.
+- The AI-isms listed in `voice-base.md`, unmasking language included.
 
 ## Checks
 
@@ -128,7 +126,3 @@ A count finds what a read-through hides.
 These checks are specified for a host to implement. This plugin ships prose and
 no scripts, so installing it adds no executable surface; a project that wants
 them enforced builds them against the body defined above.
-
-Do not write toward a readability score. Sentence length is the half of one that works,
-and it is already a check above; the other half rewards a short vague word over a precise
-technical one.
