@@ -57,6 +57,15 @@ sequence ends when step 8 passes or reports what it could not verify.
    change, what happens to the original, and any constraint the document does
    not state. Do not ask what is wrong with the document.
 
+   **Read all three reader sources, not only the first that answers, and report
+   any disagreement between them.** The order above settles which reader
+   governs, and it does not make the others wrong. A document whose opening
+   names an audience its routing does not send it to is telling you something
+   about itself. Either the routing is stale, or the document drifted from the
+   reader it was filed under. Record that as a finding against the original at
+   step 2. It can also change the job, because a document already written for
+   the target reader needs a correction rather than a re-aim.
+
    Then record the host's **output obligations** separately from its
    prohibitions. A prohibition says what you may not change, and **When to stop**
    covers those. An obligation says what the result must carry however much it
@@ -99,8 +108,25 @@ sequence ends when step 8 passes or reports what it could not verify.
    numbers are trivially verifiable and a provenance field is not, so the check
    runs where the light is. Step 8 walks this table by column.
 
-5. **Choose the disposition**, using the table below. Say which one you chose
-   and what the finding levels were that decided it.
+5. **Choose the disposition and, where the output is a new document, its
+   shape.** Take the disposition from the two tables below, and say what the
+   finding levels were that decided it.
+
+   A new document is a document, not an excerpt, so four things need settling
+   before step 7 and none of them has a default:
+
+   - **Its document type**, which decides what it must carry. The original's
+     type does not carry over. An analysis document re-aimed for a different
+     reader is rarely another analysis document.
+   - **The host shape it must take**: the frontmatter fields, fixed sections and
+     template its destination binds it to. Step 1 recorded these under output
+     obligations.
+   - **Whether it declares identifiers of its own or cites the original's.** A
+     derivative document that mints a slug creates a second home for one name.
+     Say which it does, in the document, so a later reader does not have to
+     work it out.
+   - **Where it lives.** A document with no destination has no host, and a
+     document with no host is bound by nothing.
 
 6. **Agree the plan before changing prose**, for any disposition above *tune*.
    Give the owner the disposition, the finding levels, the survival inventory,
@@ -155,12 +181,24 @@ never starts at a lower level than its highest finding.
 | 4 — prose | Structure and content hold, and the sentences cost the reader more than they need to | Tune |
 | none | The findings are about something the document should not fix | Leave it, and say why |
 
-Two rules govern the table. A document serving two readers splits rather than
-compromises: `../authoring-voice/authoring-guides.md` step 4 permits one profile
-per document, and a compromise serves neither reader. The second rule decides
-what happens to the original. Where the reader changes, the revision produces a
-new document beside the original, which still serves the reader it was written
-for. Where the reader does not change, the revision replaces what is there.
+A document serving two readers splits rather than compromises:
+`../authoring-voice/authoring-guides.md` step 4 permits one profile per
+document, and a compromise serves neither reader.
+
+The level decides how deep the work goes. What happens to the original is a
+second question, and the table above does not answer it. Take it from here.
+
+| The original | Output | Why |
+|---|---|---|
+| Frozen by a host constraint | **Derive.** A new document, and the original keeps every identifier it declared | The source cannot be edited, so the work is derivation rather than revision. The derivative cites; it does not mint |
+| Still serves the reader it was written for | **A new document beside it** | Re-aiming at a second reader supersedes nothing. Both readers keep a document |
+| Serves nobody once revised | **Replace it** | One reader, one document, and the old version goes to the changelog |
+
+**Derive is not restructure.** A restructure edits a document you own; a
+derivation reads one you may not touch and writes a second. The two produce
+different work at every level, so name which you are doing before step 7. Where
+the original is frozen, *derive* wins over whatever the level table's verb
+suggests.
 
 ## What this skill does not decide
 
