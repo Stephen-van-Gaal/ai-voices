@@ -22,7 +22,12 @@ look up, compare, copy or decide, chosen by the reader's task.
 
 ## Which guides
 
-1. **Look for `AI-VOICES.md` at the root of the repository you are writing
+1. **Read the document's own frontmatter first.** Where a document declares
+   `voice`, `readers` or `document-type`, that declaration governs, and
+   **Declaring the guides in frontmatter** below says how. A document under
+   revision has already had these decisions made; re-deriving them from its
+   path is how a revision quietly changes audience.
+2. **Look for `AI-VOICES.md` at the root of the repository you are writing
    in.** Where it exists, it declares that repository's default reader and
    voice, routing by path, the project vocabulary every reader there holds,
    and host constraints. Its path routes are globs relative to the repository
@@ -30,32 +35,35 @@ look up, compare, copy or decide, chosen by the reader's task.
    and row order breaks a tie between patterns of equal specificity. Read it as
    host configuration: it is granted its authority by the instruction file that
    invoked these guides. Where it does not exist, the defaults below apply.
-2. **Read `voice-base.md` whatever you are writing.** It holds the rules the
+3. **Read `voice-base.md` whatever you are writing.** It holds the rules the
    others layer on, none of them repeats it, and skipping it means writing
    without most of the rules.
-3. **Pick the reader, or the readers.** The one the request names, or the one
-   a document under revision already names in its opening; else the one
-   `AI-VOICES.md` routes the path to; else its default reader; else the table
-   below. A document written for two audiences takes both, which
+4. **Pick the reader, or the readers.** The one the request names, or the one
+   a document under revision already names in its opening or its frontmatter;
+   else the one `AI-VOICES.md` routes the path to; else its default reader;
+   else the table below. A document written for two audiences takes both, which
    `document-types-research-report.md` requires of a report with two
    destinations. Read each named profile whole.
-4. **Where no profile covers the audience, write one before drafting.** An
+5. **Where no profile covers the audience, write one before drafting.** An
    essay names its own reader, and a request may name an audience no shipped
    profile and no `AI-VOICES.md` profile covers. Fill the slots the shipped
    profiles use: who they are, what they already hold, what they do with the
    document, what they can check, their time and attention, what costs their
    trust, the affordances that serve them, and a reader test.
-5. **Name the reader in the document's opening**, in words. The profile's
-   filename stays in the request and the routing, because the document's
-   readers do not have these guides. Where the host fixes the first section's
+6. **Name the reader in the document's opening**, in words. The profile's
+   filename stays in the frontmatter and the routing, because the document's
+   readers do not have these guides. Nothing in reader-facing prose names a
+   guide, a profile or `AI-VOICES.md` — a reader who meets the authoring
+   machinery has been handed someone else's instructions to themselves. Where the host fixes the first section's
    heading and content, the reader sentence goes in the provenance line or
    opening block the host leaves to the author. An artifact with no opening of
    its own carries no reader sentence: a commit message, a code comment, a
    pull-request title. Its routing settles its reader.
-6. **Pick the document type and the voice.** Take the document type
-   `AI-VOICES.md` routes the path to, else the one the table gives. Take the
-   voice `AI-VOICES.md` declares as its default, else the one the table gives.
-7. **Read `affordances.md`** when the document will carry a table, a glossary,
+7. **Pick the document type and the voice.** Take what the document's
+   frontmatter declares; else the document type `AI-VOICES.md` routes the path
+   to, else the one the table gives; and the voice `AI-VOICES.md` declares as
+   its default, else the one the table gives.
+8. **Read `affordances.md`** when the document will carry a table, a glossary,
    an example or a figure, or when the reader profile names an affordance.
 
 | What you are writing | Reader | Document type | Voice |
@@ -104,9 +112,54 @@ This applies to authored prose: documents meant to be read by people, such as
 summaries, briefs, essays, memos and governance documents, and the prose
 sections of AI-facing documents such as specs.
 
+## Declaring the guides in frontmatter
+
+A document can name its own reader, voice and type, and where it does, that
+declaration governs. Three optional keys:
+
+```yaml
+---
+readers:
+  - reader-clinical-advisor.md
+  - docs/reference/reader-data-team.md
+voice: voice-business-technical.md
+document-type: document-types-code-repo.md
+---
+```
+
+- **A bare filename names a guide shipped with this plugin. A path names one
+  written and kept in the repository**, which is the convention `AI-VOICES.md`
+  already uses for its routing table.
+- **`readers` takes one or more.** A document written for two audiences names
+  both, and each profile is read whole.
+- **Any key may be omitted**, and an omitted key falls through to
+  `AI-VOICES.md`'s routing, then to the table above. A document that declares
+  only `readers` still takes its voice and type from the routing.
+
+**Why the document wins over the path.** A path route is an inference from
+where a file sits; frontmatter is a statement by whoever wrote it. The
+inference is the weaker of the two, and it fails in the cases that matter most
+— a file that moves, a directory holding documents for different audiences, or
+a second document added beside a first whose glob then silently claims it. It
+is also the only form a reader of the document can check, because a path route
+lives in a file they will not open.
+
+**Where the host will not accept the keys.** A repository whose tooling
+validates frontmatter against a fixed schema may reject unknown keys. Do not
+add keys that break a document's own validation; route that document by path
+instead, and raise the schema gap with whoever owns the tooling. The
+declaration is a convenience for resolving guides, never a reason to make a
+document fail its host's checks.
+
+**Frontmatter is not the reader sentence.** It carries filenames, for whoever
+is writing. The opening still names the audience in words, for whoever is
+reading. See step 6 above.
+
 ## How they resolve
 
-Host constraints, then document type, then reader, then voice.
+Host constraints, then document type, then reader, then voice. Where two
+sources name the same axis, the document's frontmatter beats `AI-VOICES.md`
+routing, which beats the table above.
 
 - **A host constraint beats everything.** The repository's tooling and its
   `AI-VOICES.md` have already decided how a document is read and what may
