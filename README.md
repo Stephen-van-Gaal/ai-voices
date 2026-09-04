@@ -59,9 +59,16 @@ have replaced the voice guides.
 Copy `AI-VOICES.template.md` to the root of the repository as `AI-VOICES.md`
 and fill its slots: default reader, default voice, routing by path, the
 project vocabulary every reader there holds, host constraints, and any reader
-the repository needs that the guides do not ship. The skill reads it first.
-Delete the guidance comments as you fill the slots; one still present marks a
-slot left unfilled.
+the repository needs that the guides do not ship. Delete the guidance comments
+as you fill the slots; one still present marks a slot left unfilled.
+
+Every document with frontmatter also carries an `ai-voices` block naming its
+own reader, voice and type. The block wins over routing by path, because a
+path route added to capture one file will silently claim the next file added
+beside it, and it is where the document's owner sees what was chosen and
+corrects it. It is namespaced so a host's own `voice` or `reader` key is never
+read as a declaration to these guides. `authoring-guides.md` defines it under
+**Declaring the guides in frontmatter**.
 
 ## Using them
 

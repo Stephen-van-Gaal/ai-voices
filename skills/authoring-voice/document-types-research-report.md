@@ -15,9 +15,10 @@ can stop when they have enough.
 - **Open with the answer, why it matters, and the decision the report
   informs.** Name what the report does not decide where its boundary could be
   mistaken for a recommendation.
-- **Route each intended reader, by profile, to the part that changes what they
-  should do.** A report read by a health authority leader and by a data
-  analyst has two destinations, and the opening names both.
+- **Route each intended reader to the part that changes what they should
+  do.** A report read by a health authority leader and by a data analyst has
+  two destinations, and the opening names both. One profile, written for both,
+  says who they are; `authoring-guides.md` says why a document takes one.
 - **This surface stands alone for a reader with less than a minute.** It is
   the summary block in `affordances.md`, and the document's opening; do not
   write both. Keep source names, search method and citation detail out of it,
