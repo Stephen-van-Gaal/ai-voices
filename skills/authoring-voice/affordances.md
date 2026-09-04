@@ -11,6 +11,7 @@ to say. Each reader profile names the affordances that serve that reader.
 |---|---|---|
 | Stop after a minute | Summary block: the answer, why it matters, the decision it informs, the ask | The reader may read nothing else. It stands alone. |
 | Learn unfamiliar vocabulary | Glossary table: term, plain meaning, why it matters here | Three or more terms fall outside the reader's vocabulary. A gloss at first use still applies; the glossary is the lookup surface. |
+| Enter a technical recommendation | Essential-terms block: three to six exact terms with a short plain meaning | Place it after the smallest plain example and before the technical commitment. Move definitions from a later glossary into the block instead of copying them. |
 | Reach a destination | Decision path: question, yes destination, no destination | Answers are mutually exclusive, or the order of questions changes the result. |
 | Scan the whole model | Overview table with short cells | The table is an index to the explanation, not the explanation. A plain-meaning cell belongs in it. |
 | Compare repeated subjects | Repeated cards, or a field table, with the same slots for every subject | Each subject can use the same slots, so differences stay visible. |

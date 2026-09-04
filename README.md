@@ -24,6 +24,7 @@ reader; it takes a document type where one covers its kind.
 | base | `voice-base.md` | The rules underneath everything. No other guide repeats them. |
 | reader | `reader-owner.md` | The repository owner: a clinician learning computing, approving and acting on what agents write. |
 | reader | `reader-owner-and-agents.md` | A spec, plan or definition one agent executes and the owner approves. |
+| reader | `reader-clinical-data-decision-makers.md` | Clinicians, data scientists and data management staff jointly approving a clinical-data design. |
 | reader | `reader-health-authority-leader.md` | Clinical and non-clinical leaders deciding whether to approve or sponsor. |
 | reader | `reader-scientific-external.md` | Funders and reviewers; journal editors later. |
 | reader | `reader-data-analyst.md` | An analyst reproducing or reusing a definition or query. |

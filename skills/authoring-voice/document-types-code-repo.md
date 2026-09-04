@@ -416,3 +416,5 @@ Counts run over the body defined under **Checks** in
 | reasonless rule | a rule with neither an inline clause nor an appendix entry | any |
 | arguing record | a changelog or decision row over 40 words | advisory — inspect for deliberation, duplication or procedural history rather than cutting by count |
 | unglossed term | a term outside the named reader profile's vocabulary and the project vocabulary, used bare | any |
+| new-term pile-up | several terms outside the reader's vocabulary arrive before a concrete example | advisory — state the familiar-language conclusion, show the smallest example, then introduce the terms the decision needs |
+| mechanism before model | implementation representation appears before the reader can explain the underlying distinction | advisory — move the plain model and its smallest example ahead of the mechanism |
