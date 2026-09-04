@@ -52,10 +52,28 @@ repository's `AI-VOICES.md` carries it in the project vocabulary. That list
 names what every reader there already holds, so a profile's gloss rules do not
 reach it.
 
-Where the target does not need the block's presentation, keep what it carries
-and change its form. A per-claim marker becomes a source named once in the
-section's opening. A declared identifier becomes a column in the table that
-replaced it.
+**Where the host defines an authored representation for the structure, keep that
+representation.** A repository that specifies the shape of an element, a record
+or a citation has made that shape part of what its readers check. They know a
+Finding from prose by looking, and a reformatted one costs them that. Change
+only what identity requires, and change nothing on the strength of your own
+reading of what the shape is for.
+
+Identity is a separate question from presentation, and conflating them is how a
+reformatting gets justified. Find out what the host counts as *emitting* an
+identifier before assuming a reproduction competes with the original. It is
+usually a specific field or a specific document class rather than the visible
+form, so a derivative can often carry the structure whole and change one line.
+
+Two reads settle both questions, and neither is optional:
+
+1. **The host's own definition of the structure**, where one exists. Not the
+   rule that mentions it in passing, and not a constraint written for a
+   different document class.
+2. **A document in the same repository with the same reader profile**, to see
+   the form in use. Where that document is a different kind from yours, its
+   conventions may not transfer, so check what its rules are scoped to before
+   copying them.
 
 ## Worked example
 
