@@ -118,6 +118,7 @@ rather than on its prose.
 |---|---|---|
 | manufactured contrast | `, not X` where X appears nowhere else in the document | any |
 | symmetric contrast | the two sides within one word of each other in length | advisory — read each one and apply the three tests |
+| balanced pair | two clauses or adjacent sentences sharing a grammatical frame, the second inverting the first | any, unless each half states a fact the other does not |
 | sentence length | sentences over 35 words | advisory — reread each one and split it if that lowers reader effort |
 | subordination | `which`, `that`, `because`, `although`, `while`, `whereas`, `since` | advisory over 0.25 per sentence — inspect rather than reject by count |
 | fragments | sentences carrying no finite verb | advisory — no regex detects this reliably, so read for it |

@@ -78,6 +78,14 @@ specific thing instead.
 - Narrating your own rhetoric: "to put my conclusion first", "I want to be
   unfashionable here".
 - The rule of three for rhythm, where the third item adds nothing.
+- The balanced pair: two clauses, or two adjacent sentences, built to one
+  grammatical frame so that the symmetry carries the point. "The order is real
+  and the arithmetic is not." "These may be ordered and counted. They may not
+  be added or averaged." Cut it unless each half states a fact the other does
+  not. Where the content is a genuine pair — which operations are permitted and
+  which are forbidden, or which fields are filled in which case — put the pair
+  in a table or a list, where parallel structure is the format's job, and let
+  the prose carry the reason and the consequence instead.
 - One-line paragraphs dropped in for drama; a dash fusing two thoughts that
   should be two sentences.
 - Hollow openers and closers: "In today's world…", "In recent years…",
