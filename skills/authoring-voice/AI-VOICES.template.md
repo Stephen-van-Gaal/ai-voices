@@ -12,9 +12,9 @@ its slot is filled. A GUIDANCE comment still present marks an unfilled slot. -->
 `reader-owner-and-agents.md`, `reader-health-authority-leader.md`,
 `reader-scientific-external.md`, `reader-data-analyst.md`) or one defined under
 Additional readers. Name it as the guides do, with the `.md` extension. A
-document that declares `readers` in its frontmatter, or names its own reader,
-overrides this. Empty means the routing
-table in `authoring-guides.md` decides. -->
+document that declares `readers` in an `ai-voices` frontmatter block, or names
+its own reader in its opening, overrides this. Empty means the routing table
+in `authoring-guides.md` decides. -->
 
 ## Default voice
 
@@ -25,13 +25,14 @@ extension. Empty means the routing table decides. -->
 ## Routing by path
 
 <!-- GUIDANCE: One row per path pattern. A document under that path takes the
-reader and document type given, unless the document declares its own in
-frontmatter or names another reader in its opening. Prefer frontmatter for a
-document whose audience differs from its neighbours': a row added here to
-capture one file will silently claim the next file added beside it.
-`authoring-guides.md` defines the pattern syntax, the frontmatter keys, and the
-precedence between overlapping rows, so those rules survive this comment being
-deleted. Empty means only the defaults above apply. -->
+reader and document type given, unless the document declares `readers` or
+`document-type` in an `ai-voices` frontmatter block, or names another reader
+in its opening. Prefer the frontmatter block for a document whose audience
+differs from its neighbours': a row added here to capture one file will
+silently claim the next file added beside it. `authoring-guides.md` defines
+the pattern syntax, the frontmatter block, and the precedence between
+overlapping rows, so those rules survive this comment being deleted. Empty
+means only the defaults above apply. -->
 
 | Path | Reader | Document type |
 |---|---|---|
