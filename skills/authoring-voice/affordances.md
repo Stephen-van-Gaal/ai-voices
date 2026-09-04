@@ -28,6 +28,11 @@ to say. Each reader profile names the affordances that serve that reader.
   copies of one fact drift. A gloss is not a copy of a fact: a plain-meaning
   cell in an overview table, or a glossary entry that a card also defines,
   serves the reader who stops at the index or the glossary, and stays.
+- **Order a glossary for the way it is used.** One placed at the end of a
+  document is a lookup surface: a reader arrives already knowing the term they
+  want, so order it alphabetically. One placed ahead of the argument is read
+  through as preparation for what follows, so group related terms together and
+  take them in the order the argument will.
 - **Keep table cells to a phrase or one sentence.** Where a subject needs
   longer cells, several caveats, or more fields than a reader can scan as one
   row, keep a compact overview as the index and move the explanation into
