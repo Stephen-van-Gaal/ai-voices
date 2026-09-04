@@ -13,14 +13,17 @@ Where an obligation here conflicts with a voice preference, this file wins.
   main conclusion. Order those facts for the document's job. An analytical or
   decision document names the topic or decision, the questions it addresses
   and its main findings or recommendation. A reference document may lead with
-  the operative rule. The block may route readers and does not need to carry
+  the operative rule. The block may route the reader and does not need to carry
   one claim of its own. A template opens with guidance for its author. A record
   opens with its scope and fields; neither invents a conclusion.
-- **Route a second reader with a reading profile.** Where whatever serves this
-  document can return part of it, declare a named list of sections and hand each
-  reader theirs. That list is what the reading surface means for this document.
-  Where no such mechanism exists, section order carries the obligation instead:
-  keep each reader's sections together and say in the opening where they start.
+- **Route the reader to the sections that ask something of them.** A profile
+  written for two audiences serves people who do not all hold the same ground,
+  and none of them should read the whole document to find the question
+  addressed to them. Where whatever serves this document can return part of it,
+  declare a named list of sections; that list is what the reading surface means
+  for this document. Where no such mechanism exists, say in the opening which
+  sections ask for a judgement the rest of the document cannot supply, and keep
+  those sections together.
 - **Lead each substantive section with its conclusion.** Do not build toward
   it. A reader who stops halfway should still have the finding. An orientation
   or routing section is not substantive; it names what the sections below do.
@@ -40,10 +43,13 @@ Where an obligation here conflicts with a voice preference, this file wins.
   Gloss anything outside both once, at first use.
   A term in either exempts the term, not a trap in it: where its meaning
   differs from its visible form, say so.
-- **Where two readers share the words, gloss to the narrower vocabulary.**
-  `reader-owner-and-agents.md` is the usual pair: the agent's vocabulary is
-  the larger one, so take the owner's. This is not a trade against precision.
-  The agent needs the exact term, so keep the term and gloss it.
+- **Where the profile's audience does not share one vocabulary, gloss whatever
+  either might be missing.** A profile written for two audiences says which ground each half
+  holds. `reader-owner-and-agents.md` is the nested case: the agent's
+  vocabulary contains the owner's, so take the owner's. Where the two halves
+  hold different ground rather than more and less of the same, as a clinical
+  and a platform audience do, gloss both. This is not a trade against
+  precision. Keep the exact term and put the gloss beside it.
 - **A long document carries a contents section.** Past roughly 300 lines or ten
   top-level sections a reader needs navigation. Generate it, and never maintain
   it by hand: a hand-written index is a second copy of the heading list, and it
