@@ -31,7 +31,11 @@ Where an obligation here conflicts with a voice preference, this file wins.
   of its own, so its opening names what the subsections do and the order to
   take them in. One or two sentences, and they are not a cut.
 - **Rank by consequence.** Give the most room to whatever costs the reader most
-  to get wrong, and put it first.
+  to get wrong, and put it first. This governs every ordering the document
+  chooses, not only its sections: a list of commitments, the rows of a table,
+  the items in a bullet run. Where the ordering is intrinsic to the material it
+  wins instead — the steps of a procedure, a sequence of events, a surface a
+  reader looks terms up in.
 - **Size it to its reader.** Cut what does not serve the decision the reader
   came to make.
 - **Name the vocabulary you assume.** Say in the opening who the document is
@@ -43,10 +47,16 @@ Where an obligation here conflicts with a voice preference, this file wins.
   Gloss anything outside both once, at first use.
   A term in either exempts the term, not a trap in it: where its meaning
   differs from its visible form, say so.
+- **Where a document mixes vocabularies, say which one each term came from.** A
+  reader who cannot tell a vendor's term from the platform's, or either from one
+  this project coined, will search for a coinage in someone else's documentation
+  and find nothing there. A glossary column carries this, and so does a
+  parenthesis inside the definition. It matters most for the terms a document
+  mints, because those are the ones with nowhere else to look.
 - **Where the profile's audience does not share one vocabulary, gloss whatever
-  either might be missing.** A profile written for two audiences says which ground each half
-  holds. `reader-owner-and-agents.md` is the nested case: the agent's
-  vocabulary contains the owner's, so take the owner's. Where the two halves
+  either might be missing.** A profile written for two audiences says which
+  ground each half holds. `reader-owner-and-agents.md` is the nested case: the
+  agent's vocabulary contains the owner's, so take the owner's. Where the two halves
   hold different ground rather than more and less of the same, as a clinical
   and a platform audience do, gloss both. This is not a trade against
   precision. Keep the exact term and put the gloss beside it.
@@ -55,6 +65,9 @@ Where an obligation here conflicts with a voice preference, this file wins.
   it by hand: a hand-written index is a second copy of the heading list, and it
   goes stale the first time a heading moves. Where the host has no generator,
   omit the section and let the opening's routing carry the navigation.
+- **Do not state a count of a list that stands beside it.** "Six commitments"
+  above six paragraphs is a second copy of the list, and it goes stale the first
+  time one is added or removed. The list is already countable.
 - **A section takes the class of its job, not the file's.** A reference document
   may hold an explanatory section, and each follows the rules of its own class.
   The unit is the section, so a paragraph inside one does not reclassify itself.

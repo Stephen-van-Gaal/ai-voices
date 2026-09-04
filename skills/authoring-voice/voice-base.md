@@ -76,7 +76,10 @@ specific thing instead.
 - "Here's the thing"; "Let me be clear"; "To be clear"; "It's worth noting
   that".
 - Narrating your own rhetoric: "to put my conclusion first", "I want to be
-  unfashionable here".
+  unfashionable here". The document's construction goes the same way: "Two
+  tables, because the audience splits"; "a term used once is glossed where it
+  appears rather than listed". The reader came for the tables and the glosses,
+  not for the rule that produced them.
 - The rule of three for rhythm, where the third item adds nothing.
 - The balanced pair: two clauses, or two adjacent sentences, built to one
   grammatical frame so that the symmetry carries the point. "The order is real
