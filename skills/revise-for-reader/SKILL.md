@@ -57,6 +57,15 @@ sequence ends when step 8 passes or reports what it could not verify.
    change, what happens to the original, and any constraint the document does
    not state. Do not ask what is wrong with the document.
 
+   Then record the host's **output obligations** separately from its
+   prohibitions. A prohibition says what you may not change, and **When to stop**
+   covers those. An obligation says what the result must carry however much it
+   changes, and nothing else in this procedure looks for one. Read the
+   repository's `AI-VOICES.md` and its instruction files for the evidence scheme
+   the output must use, the document shape it must take, and the rules binding
+   its identifiers. Step 8 verifies the result against this list. A revision
+   that satisfies every prohibition and no obligation still fails its host.
+
 2. **Read the document yourself, against the target profile, slot by slot.**
    Take every slot whether or not anyone has mentioned it. Ask what the document
    would look like written today for this reader, rather than what is wrong with
@@ -73,12 +82,22 @@ sequence ends when step 8 passes or reports what it could not verify.
    complaint missed, add it. A complaint you cannot substantiate still gets
    reported as unsubstantiated rather than quietly dropped.
 
-4. **Inventory what must survive.** List every load-bearing item the document
-   carries: each claim and its evidence marker, each number, each caveat and
-   confidence boundary, each identifier, each commitment, each named
-   accountability. This is the step that protects against the failure mode of
-   rewriting, which is losing a fact while improving a sentence. Step 8 checks
-   this list.
+4. **Inventory what must survive, as a table rather than a list.** One row per
+   load-bearing item, and these columns:
+
+   | Column | Holds |
+   |---|---|
+   | Item | The claim, number, caveat, confidence boundary, commitment or named accountability |
+   | Evidence marker | How it is known, in the host's evidence vocabulary |
+   | Provenance | What produced it: the probe, run, source document or person |
+   | Identifier | The slug or id it is cited by, where it has one |
+   | Fate | Filled at step 8: carried, emitted, or dropped with a reason |
+
+   Write the table even where a column is empty for every row, because a column
+   nobody filled is visibly unanswered and a sentence nobody wrote is not. A
+   prose list lets you check the cheap attribute and call the item checked: the
+   numbers are trivially verifiable and a provenance field is not, so the check
+   runs where the light is. Step 8 walks this table by column.
 
 5. **Choose the disposition**, using the table below. Say which one you chose
    and what the finding levels were that decided it.
@@ -95,13 +114,32 @@ sequence ends when step 8 passes or reports what it could not verify.
    section-scoped revision produces content its section cannot hold, emit a
    `BELONGS ELSEWHERE` block rather than dropping it or inlining it.
 
-8. **Verify.** Three checks, and report what each returned. Run the target
-   profile's own reader test against the result and say whether it passes. Walk
-   the step 4 inventory and confirm each item survived or was dropped on
-   purpose, naming any that were dropped. Report the three numbers
-   `../authoring-voice/document-types-code-repo.md` § When you are revising
-   requires — surface, total and emitted — and name the reader need that any
-   material growth serves.
+8. **Verify.** Four checks, and report what each returned rather than that it
+   ran.
+
+   Run the target profile's own reader test against the result. Where the test
+   asks something only a person can answer, say that it could not be run and
+   name what you supplied instead of running it.
+
+   **Walk the step 4 table by column, not by row.** Fill the Fate column for
+   every row, then report each column's total separately: items carried,
+   evidence markers carried, provenance carried, identifiers carried. A row
+   whose Item survived and whose Provenance did not is a partial loss, and
+   reporting by row hides it behind the attribute that did survive. An
+   identifier is carried or emitted, never dropped, because it is how another
+   document cites this evidence.
+
+   Check the result against the output obligations recorded at step 1, naming
+   each obligation and how the result meets it. A host rule may permit an
+   obligation to be discharged some other way. A derivative section can name its
+   source once in place of a marker on every claim. Say which route you took,
+   and show that you took it.
+
+   Report the three numbers `../authoring-voice/document-types-code-repo.md`
+   § When you are revising requires — surface, total and emitted — and name the
+   reader need that any material growth serves. Where the revision produced a
+   new document and left the original standing, nothing was reduced: report what
+   this reader now reads and what the repository gained.
 
 ## Choosing the disposition
 

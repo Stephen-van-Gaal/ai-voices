@@ -22,12 +22,40 @@ difference in row 7 irrelevant.
 | What they can check | The reader can verify less, or more | Anything the target cannot check is taken on the credibility of what they can, so supply that. Drop evidence aimed at a check the target will not run |
 | Time and attention | The reader has more or less of it | Decide whether the opening must stand alone. A reader with minutes reads only the opening, so everything they must have goes above the fold |
 | What costs their trust | The failure modes differ | Sweep for each item the target's profile names. Each one is a defect to find and remove, not a preference |
-| Affordances that serve them | The formats differ | Add the affordances the target's profile names and remove those that now serve nobody. `../authoring-voice/affordances.md` maps the reader's task to the format |
+| Affordances that serve them | The formats differ | Add the affordances the target's profile names and remove those that now serve nobody, subject to **What is not an affordance** below. `../authoring-voice/affordances.md` maps the reader's task to the format |
 | Reader test | The acceptance condition differs | Nothing, at this step. `SKILL.md` step 8 runs the target's test against the finished revision |
 
 Where a slot is the same in both profiles, it produces no edit. Say so rather
 than leaving the row unmentioned, because a slot nobody reported is
 indistinguishable from a slot nobody checked.
+
+## What is not an affordance
+
+The affordance row is the only row licensed to remove anything, so it is the row
+that removes the wrong thing. **A repeated block carrying an evidence marker, a
+provenance link or an identifier is content wearing an affordance's clothes.**
+Change how it is presented; never drop what it carries.
+
+Three tests. A block fails to be an affordance if any of them holds.
+
+1. **Does it say how a claim is known?** An evidence marker, a basis field, a
+   confidence label. Dropping it turns a sourced claim into an assertion.
+2. **Does it name what produced the claim?** A probe, a run, a source document,
+   a person. The reader who can check only half the ground needs this to check
+   their half.
+3. **Does anything outside the document cite it?** A slug, an id, a heading a
+   tool resolves. Dropping it breaks every citation, and the citers are not in
+   front of you.
+
+A term used by such a block is not jargon to be cut either, where the
+repository's `AI-VOICES.md` carries it in the project vocabulary. That list
+names what every reader there already holds, so a profile's gloss rules do not
+reach it.
+
+Where the target does not need the block's presentation, keep what it carries
+and change its form. A per-claim marker becomes a source named once in the
+section's opening. A declared identifier becomes a column in the table that
+replaced it.
 
 ## Worked example
 
