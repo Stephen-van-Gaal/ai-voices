@@ -39,16 +39,19 @@ look up, compare, copy or decide, chosen by the reader's task.
 3. **Read `voice-base.md` whatever you are writing.** It holds the rules the
    others layer on, none of them repeats it, and skipping it means writing
    without most of the rules.
-4. **Pick the reader, or the readers.** The one the request names, or the one
-   a document under revision already names in its opening or declares in its
-   `ai-voices` block;
-   else the one `AI-VOICES.md` routes the path to; else its default reader;
-   else the table below. A document written for two audiences takes both, which
-   `document-types-research-report.md` requires of a report with two
-   destinations. Read each named profile whole.
+4. **Pick the reader.** The one the request names, or the one a document
+   under revision already names in its opening or declares in its `ai-voices`
+   block; else the one `AI-VOICES.md` routes the path to; else its default
+   reader; else the table below. A document takes one profile. Where two
+   audiences will read it, take a profile written for both, as
+   `reader-owner-and-agents.md` is, and write one where none exists. Two
+   profiles hand the writer two sets of instructions with nothing to settle a
+   conflict between them, and leave the owner no single place to correct the
+   choice. Read the profile whole.
 5. **Where no profile covers the audience, write one before drafting.** An
-   essay names its own reader, and a request may name an audience no shipped
-   profile and no `AI-VOICES.md` profile covers. Fill the slots the shipped
+   essay names its own reader, a request may name an audience no shipped
+   profile and no `AI-VOICES.md` profile covers, and a document with two
+   audiences needs a profile that serves both. Fill the slots the shipped
    profiles use: who they are, what they already hold, what they do with the
    document, what they can check, their time and attention, what costs their
    trust, the affordances that serve them, and a reader test.
@@ -117,50 +120,51 @@ sections of AI-facing documents such as specs.
 
 ## Declaring the guides in frontmatter
 
-A document names its own reader, voice and type in an `ai-voices` block in its
-frontmatter, and where it does, that block governs, subject to host
-constraints. Three optional keys:
+A document names its reader, voice and type in an `ai-voices` block in its
+frontmatter, and that block governs, subject to host constraints. Three keys:
 
 ```yaml
 ---
 ai-voices:
-  readers:
-    - reader-health-authority-leader.md
-    - docs/reference/reader-data-team.md
+  reader: reader-health-authority-leader.md
   voice: voice-business-technical.md
-  document-type: document-types-code-repo.md
+  document-type: document-types-research-report.md
 ---
 ```
 
+Where the frontmatter is otherwise short, the same block fits on one line:
+`ai-voices: {reader: reader-owner.md, voice: voice-business-technical.md}`.
+
+- **Every document with frontmatter carries the block.** It records what was
+  chosen, in one place, for the document's owner as much as for its writer.
+  An owner who disagrees with the reader edits that line, and the next
+  revision follows it; without the line there is nowhere to make the
+  correction. A document with no frontmatter, or none its host allows, carries
+  no block, and the routing settles it.
 - **The block is named for the tool that reads it.** Frontmatter is shared
   with whatever else governs the document, and a host may already use `voice`,
-  `readers` or `document-type` for its own purposes. A key inside `ai-voices`
+  `reader` or `document-type` for its own purposes. A key inside `ai-voices`
   cannot be mistaken for the host's, and a top-level key of the same name is
   not a declaration to these guides.
 - **A bare filename names a guide shipped with this plugin. A path names one
   written and kept in the repository**, which is the convention `AI-VOICES.md`
   already uses for its routing table.
-- **`readers` takes one or more.** A document written for two audiences names
-  both, and each profile is read whole.
-- **Any key may be omitted**, and an omitted key falls through to
-  `AI-VOICES.md`'s routing, then to the table above. A document that declares
-  only `readers` still takes its voice and type from the routing.
+- **`reader` takes one profile.** Step 4 says why, and what a document with
+  two audiences takes instead.
+- **A key may be omitted**, and an omitted key falls through to
+  `AI-VOICES.md`'s routing, then to the table above. A document whose kind has
+  no document type, such as a decision memo, omits that key.
 - **A value that resolves nowhere stops the work.** Say which value failed and
   where you looked. Do not fall through to the routing, because a misspelt
   filename would then change the audience without anyone noticing.
-- **Write the block where the routing would have chosen differently.** When a
-  request names a reader, voice or type that the path routing would not give
-  the document, add the block so the next revision keeps the choice. Where the
-  routing already gives the right answer, the block adds nothing; leave it
-  out.
 
 **Why the document wins over the path.** A path route is an inference from
 where a file sits; the block is a statement by whoever wrote the document. The
 inference fails in the cases that matter most: a file that moves, a directory
 holding documents for different audiences, and a second document added beside
 a first, whose glob then silently claims it. The block also travels with the
-file, so whoever revises the document can check its declaration without
-opening a second file.
+file, so whoever revises or owns the document can check the choice, and
+correct it, without opening a second file.
 
 **Where the host will not accept the block.** A repository whose tooling
 validates frontmatter against a fixed schema may reject unknown keys. Do not

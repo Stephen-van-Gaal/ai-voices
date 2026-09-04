@@ -62,11 +62,11 @@ project vocabulary every reader there holds, host constraints, and any reader
 the repository needs that the guides do not ship. Delete the guidance comments
 as you fill the slots; one still present marks a slot left unfilled.
 
-A document can also declare its own reader, voice and type in an `ai-voices`
-block in its frontmatter, and that block wins over routing by path. Prefer it
-wherever a document's audience differs from its neighbours', because a path
-route added to capture one file will silently claim the next file added beside
-it. The block is namespaced so a host's own `voice` or `readers` key is never
+Every document with frontmatter also carries an `ai-voices` block naming its
+own reader, voice and type. The block wins over routing by path, because a
+path route added to capture one file will silently claim the next file added
+beside it, and it is where the document's owner sees what was chosen and
+corrects it. It is namespaced so a host's own `voice` or `reader` key is never
 read as a declaration to these guides. `authoring-guides.md` defines it under
 **Declaring the guides in frontmatter**.
 
