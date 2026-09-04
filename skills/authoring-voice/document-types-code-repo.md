@@ -43,8 +43,8 @@ Where an obligation here conflicts with a voice preference, this file wins.
   Gloss anything outside both once, at first use.
   A term in either exempts the term, not a trap in it: where its meaning
   differs from its visible form, say so.
-- **Where the profile's audience does not share one vocabulary, gloss to the
-  narrower.** A profile written for two audiences says which ground each half
+- **Where the profile's audience does not share one vocabulary, gloss whatever
+  either might be missing.** A profile written for two audiences says which ground each half
   holds. `reader-owner-and-agents.md` is the nested case: the agent's
   vocabulary contains the owner's, so take the owner's. Where the two halves
   hold different ground rather than more and less of the same, as a clinical
