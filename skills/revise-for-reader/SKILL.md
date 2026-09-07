@@ -74,9 +74,12 @@ sequence ends when step 8 passes or reports what it could not verify.
    covers those. An obligation says what the result must carry however much it
    changes, and nothing else in this procedure looks for one. Read the
    repository's `AI-VOICES.md` and its instruction files for the evidence scheme
-   the output must use, the document shape it must take, and the rules binding
-   its identifiers. Step 8 verifies the result against this list. A revision
-   that satisfies every prohibition and no obligation still fails its host.
+   an in-place output must use, the document shape it must take, and the rules
+   binding its identifiers. Where the output may be a new document, record its
+   destination obligations as unsettled; step 5 completes them after choosing
+   the destination and document type. Step 8 verifies the result against the
+   completed list. A revision that satisfies every prohibition and no
+   obligation still fails its host.
 
 2. **Diff the reader profiles, then read the document against the target.** Read
    both profiles whole and use `reader-diff.md` slot by slot to derive the edit
@@ -85,9 +88,11 @@ sequence ends when step 8 passes or reports what it could not verify.
    written today for the target reader, rather than what is wrong with the one
    in front of you; the second question preserves the shape you already have,
    and `../authoring-voice/document-types-code-repo.md` § When you are revising
-   states the rule. Record each finding with the slot it comes from and the
-   level it sits at, per **Choosing the disposition** below. A finding that cites
-   no slot is taste, so cut it.
+   states the rule. Record each reader finding with the slot it comes from and
+   the level it sits at, per **Choosing the disposition** below. A required
+   finding about a reader declaration, host rule, document type, routing or
+   output obligation instead cites that governing rule. A finding that cites
+   neither a reader slot nor another applicable authority is taste, so cut it.
 
 3. **Reconcile your read with what the owner told you.** Where a complaint you
    were given matches a finding, say so. Where your read contradicts it, say
@@ -104,6 +109,8 @@ sequence ends when step 8 passes or reports what it could not verify.
    | Item | The claim, number, caveat, confidence boundary, commitment or named accountability |
    | Item fate | Filled at step 8 |
    | Evidence marker | How it is known, in the host's evidence vocabulary |
+   | Evidence marker fate | Filled at step 8 |
+   | Evidence | The material that supports it: a query, output, transcript, calculation or cited passage |
    | Evidence fate | Filled at step 8 |
    | Provenance | What produced it: the probe, run, source document or person |
    | Provenance fate | Filled at step 8 |
@@ -127,8 +134,7 @@ sequence ends when step 8 passes or reports what it could not verify.
      type does not carry over. An analysis document re-aimed for a different
      reader is rarely another analysis document.
    - **The host shape it must take**: the frontmatter fields, fixed sections and
-     template its destination binds it to. Step 1 recorded these under output
-     obligations.
+     template its destination binds it to.
    - **Whether it declares identifiers of its own or cites the original's.** A
      derivative document that mints a slug creates a second home for one name.
      Say which it does, in the document, so a later reader does not have to
@@ -136,10 +142,23 @@ sequence ends when step 8 passes or reports what it could not verify.
    - **Where it lives.** A document with no destination has no host, and a
      document with no host is bound by nothing.
 
+   Once the document type and destination are chosen, read the destination's
+   `AI-VOICES.md`, instruction files, schema and template. Complete the output
+   obligations with the evidence scheme, shape and identifier rules that bind
+   there. Step 6 uses this completed list; do not plan or draft the new document
+   against the source host's obligations alone.
+
 6. **Agree the plan before changing prose**, for any disposition above *tune*.
    Give the owner the disposition, the finding levels, the survival inventory,
    and what the document will look like when it is done. A tune proceeds without
    a pause.
+
+   Where step 7 will change the only standing source in place, verify that the
+   host holds a recoverable pre-edit version before writing. In Git, the source
+   must be committed; in another versioned host, use its durable version or
+   snapshot. This version permits rollback. It does not satisfy the survival
+   inventory: evidence that must survive still needs a named home in the live
+   result, its standing source, an appendix or an evidence artifact.
 
 7. **Revise from the top down.** Take structure before sections, sections before
    paragraphs, and paragraphs before sentences. Never spend effort at a lower
@@ -156,17 +175,18 @@ sequence ends when step 8 passes or reports what it could not verify.
    name what you supplied instead of running it.
 
    **Walk the step 4 table by fate column, not by row.** Fill every fate cell,
-   then report each attribute's totals separately. An item, evidence marker or
-   provenance entry is carried, emitted, retained in the standing source, or
-   dropped with a reason. An identifier can also be renamed when the document
-   type's identifier rules permit it and every live citer is updated in the
-   same transaction. Drop an identifier only when the host permits it and every
-   live citer has been handled. A row whose Item survived and whose Provenance
-   did not is a partial loss, and reporting by row hides it behind the attribute
-   that did survive.
+   then report each attribute's totals separately. An item, evidence marker,
+   evidence artifact or provenance entry is carried, emitted, retained in the
+   standing source, or dropped with a reason. Evidence never drops solely
+   because the target cannot run its check. An identifier can also be renamed
+   when the document type's identifier rules permit it and every live citer is
+   updated in the same transaction. Drop an identifier only when the host
+   permits it and every live citer has been handled. A row whose Item survived
+   and whose Provenance did not is a partial loss, and reporting by row hides it
+   behind the attribute that did survive.
 
-   Check the result against the output obligations recorded at step 1, naming
-   each obligation and how the result meets it. A host rule may permit an
+   Check the result against the completed output obligations, naming each
+   obligation and how the result meets it. A host rule may permit an
    obligation to be discharged some other way. A derivative section can name its
    source once in place of a marker on every claim. Say which route you took,
    and show that you took it.
@@ -202,8 +222,9 @@ second question, and the table above does not answer it. Take it from here.
 | The original | Output | Why |
 |---|---|---|
 | Frozen by a host constraint | **Derive.** A new document, and the original keeps every identifier it declared | The source cannot be edited, so the derivative cites rather than re-minting the source's identifiers. It may declare distinct identifiers required by its own host and document type |
-| Still serves the reader it was written for | **A new document beside it** | Re-aiming at a second reader supersedes nothing. Both readers keep a document |
-| Serves nobody once revised | **Replace it** | One reader, one document, and the old version goes to the changelog |
+| Target reader is the source reader, and the source can be edited | **Revise the original in place** | Same-reader tuning creates no second audience and needs no second document |
+| Still serves a different reader after re-aiming | **A new document beside it** | Re-aiming at a second reader supersedes nothing. Both readers keep a document |
+| Serves nobody after re-aiming | **Replace it** | One reader, one document, and the old version goes to the changelog |
 
 **Derive is not restructure.** A restructure edits a document you own; a
 derivation reads one you may not touch and writes a second. The two produce

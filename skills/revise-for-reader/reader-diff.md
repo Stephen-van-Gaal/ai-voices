@@ -16,10 +16,10 @@ difference in row 7 irrelevant.
 
 | Slot | What a difference between the profiles means | What changes in the document |
 |---|---|---|
-| Who they are | The audience named in the opening is now wrong | Rewrite the sentence naming the reader, in words rather than by profile filename |
+| Who they are | The audience named in the opening is now wrong | Rewrite the sentence naming the reader, in words rather than by profile filename. At document scope, update the governing `ai-voices.reader` declaration where the host accepts one; otherwise settle the path routing or destination that will govern the revised document. At section scope, emit the declaration or routing change as `BELONGS ELSEWHERE` |
 | What they already hold | The two readers hold different vocabularies | Re-gloss throughout: gloss what the target lacks, and drop a gloss on a term the target holds. Where the two hold different ground rather than more and less of the same, gloss both |
 | What they do with the document | The reader leaves with different work | Change the ask, and change which section leads. A reader who approves needs the ask, the cost and the risk before anything else; a reader who executes needs the procedure |
-| What they can check | The reader can verify less, or more | Anything the target cannot check is taken on the credibility of what they can, so supply that. Drop evidence aimed at a check the target will not run |
+| What they can check | The reader can verify less, or more | Anything the target cannot check is taken on the credibility of what they can, so supply that. Evidence for a check the target will not run may leave their reading surface only when it remains in the standing source, an appendix or a named evidence artifact. Never drop evidence because the target cannot run the check |
 | Time and attention | The reader has more or less of it | Decide whether the opening must stand alone. A reader with minutes reads only the opening, so everything they must have goes above the fold |
 | What costs their trust | The failure modes differ | Sweep for each item the target's profile names. Each one is a defect to find and remove, not a preference |
 | Affordances that serve them | The formats differ | Add the affordances the target's profile names and remove those that now serve nobody, subject to **What is not an affordance** below. `../authoring-voice/affordances.md` maps the reader's task to the format |
@@ -106,8 +106,9 @@ SQL.
   ask, the cost and the risk become it. The lead section changes.
 - *What they can check.* The analyst checks that the query runs and the count
   matches. The leader can check neither, and takes both on the credibility of
-  the ask, the risk and the named owner. The count stays, with its source; the
-  SQL that produced it goes.
+  the ask, the risk and the named owner. The count stays, with its source. The
+  SQL leaves the leader's reading surface and remains in the analyst's standing
+  source.
 - *Time and attention.* The analyst reads until they find the query. The leader
   reads minutes, and often only the opening. The opening must now carry the
   answer, the ask, the cost and the risk on its own.
@@ -124,8 +125,9 @@ SQL.
 it, because the analyst still needs the note as it was. It opens with a summary
 block carrying the answer, the ask, the cost and the risk. The definition
 survives as one glossed paragraph rather than as rules and SQL. The count stays
-with its source named. The tables and the query are gone, and the risks arrive
-as a boundary-case table.
+with its source named. The leader's surface omits the query but cites the
+standing analyst note that retains it, and the risks arrive as a boundary-case
+table.
 
 **The known answer.** The highest finding sat at level 3, so the disposition was
 *re-aim* rather than *redraft*: the content was right and the document carried
