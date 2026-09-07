@@ -1,6 +1,6 @@
 {
   "name": "ai-voices",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "Writing guides for AI agents: who reads a document, what it must carry, and how it should sound.",
   "author": {
     "name": "Stephen van Gaal",

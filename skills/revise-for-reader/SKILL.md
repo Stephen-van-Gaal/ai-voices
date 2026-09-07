@@ -1,0 +1,249 @@
+---
+name: revise-for-reader
+description: Use when revising a document that already exists — re-aiming it at a reader it was not written for, or tuning it for the reader it already has. Derives what must change by diffing the source reader profile against the target profile, works from structure down to sentences, and verifies the result against the target reader's own test. Use authoring-voice instead when drafting something new. Personal voice standards replace only the bundled voice rules; reader and document-shape obligations still apply.
+allowed-tools: Read, Glob, Grep, Edit, Write
+---
+
+# Revise for a reader
+
+This skill revises a document that already exists. It covers two jobs: re-aiming
+a document at a reader it was not written for, and tuning one for the reader it
+already has. Both run the procedure below, and the target reader decides which
+of the two you are doing.
+
+This file has two readers: the agent executing a revision and the owner
+approving it. The guides it cites sit in the sibling skill and are named by
+relative path: `../authoring-voice/voice-base.md`. Read
+`../authoring-voice/authoring-guides.md` first, as that file directs, then read
+this one.
+
+**The operative rule: a reader profile is a specification, so a revision is a
+diff between two specifications.** The profiles state what a reader holds, what
+they do with the document, what they can check, and what costs their trust. A
+difference between two profiles is the edit list. Revising by taste produces
+changes nobody can check and the owner cannot correct.
+
+## When to stop
+
+Stop and ask before doing anything else in these four cases. Each one makes a
+revision that looks finished and has silently changed the wrong thing.
+
+- **The source reader does not resolve.** Step 1 says where to look. A revision
+  that guesses the original audience rewrites the document against a reader it
+  invented.
+- **No profile covers the target reader.** Write the profile first, filling the
+  eight slots the shipped profiles use. `../authoring-voice/authoring-guides.md`
+  step 5 governs this, and `reader-diff.md` cannot run against a profile that
+  does not exist.
+- **A host constraint forbids the change.** A schema that rejects a frontmatter
+  key, a records policy that requires a supersession marker to stand, tooling
+  that resolves a section by its heading text. `../authoring-voice/document-types-code-repo.md`
+  § What the host constrains says the host wins.
+- **The document is a record.** A changelog, a decision log or an immutable
+  decision record states what happened. Rewriting one falsifies it.
+
+## The procedure
+
+Run these in order. Step 5 decides how much of steps 6 and 7 you do, and the
+sequence ends when step 8 passes or reports what it could not verify.
+
+1. **Settle the scope and the readers.** Say whether the remit is the whole
+   document or one section, because several rules can only be executed at
+   document scope; `../authoring-voice/document-types-code-repo.md` § Scope of a
+   rewrite governs both. Resolve the source reader from the document's
+   `ai-voices` frontmatter block, else the reader named in its opening, else the
+   repository's `AI-VOICES.md` path routing, else its default reader, else the
+   built-in table in `../authoring-voice/authoring-guides.md`. Take the target
+   reader from the request. Where the request names no different audience, use
+   the resolved source reader as the target; that is the tuning case. Ask the
+   owner for what a read cannot recover: what must not change, what happens to
+   the original, and any constraint the document does not state. Do not ask
+   what is wrong with the document.
+
+   **Read every applicable reader declaration, not only the first that answers,
+   and report any disagreement between them.** The order above settles which
+   reader governs, and it does not make the others wrong. A document whose
+   opening names an audience its routing does not send it to is telling you
+   something about itself. Either the routing is stale, or the document drifted
+   from the reader it was filed under. Record that as a finding against the
+   original at step 2. It can also change the job, because a document already
+   written for the target reader needs a correction rather than a re-aim.
+
+   Then record the host's **output obligations** separately from its
+   prohibitions. A prohibition says what you may not change, and **When to stop**
+   covers those. An obligation says what the result must carry however much it
+   changes, and nothing else in this procedure looks for one. Read the
+   repository's `AI-VOICES.md` and its instruction files for the evidence scheme
+   an in-place output must use, the document shape it must take, and the rules
+   binding its identifiers. Where the output may be a new document, record its
+   destination obligations as unsettled; step 5 completes them after choosing
+   the destination and document type. Step 8 verifies the result against the
+   completed list. A revision that satisfies every prohibition and no
+   obligation still fails its host.
+
+2. **Diff the reader profiles, then read the document against the target.** Read
+   both profiles whole and use `reader-diff.md` slot by slot to derive the edit
+   list. Take every slot whether or not anyone has mentioned it, including the
+   slots that produce no edit. Then ask what the document would look like
+   written today for the target reader, rather than what is wrong with the one
+   in front of you; the second question preserves the shape you already have,
+   and `../authoring-voice/document-types-code-repo.md` § When you are revising
+   states the rule. Record each reader finding with the slot it comes from and
+   the level it sits at, per **Choosing the disposition** below. A required
+   finding about a reader declaration, host rule, document type, routing or
+   output obligation instead cites that governing rule. A finding that cites
+   neither a reader slot nor another applicable authority is taste, so cut it.
+
+3. **Reconcile your read with what the owner told you.** Where a complaint you
+   were given matches a finding, say so. Where your read contradicts it, say
+   that plainly and give the evidence, because a complaint names a symptom and
+   the owner is entitled to the diagnosis. Where the read found something the
+   complaint missed, add it. A complaint you cannot substantiate still gets
+   reported as unsubstantiated rather than quietly dropped.
+
+4. **Inventory what must survive, as a table rather than a list.** One row per
+   load-bearing item, and these columns:
+
+   | Column | Holds |
+   |---|---|
+   | Item | The claim, number, caveat, confidence boundary, commitment or named accountability |
+   | Item fate | Filled at step 8 |
+   | Evidence marker | How it is known, in the host's evidence vocabulary |
+   | Evidence marker fate | Filled at step 8 |
+   | Evidence | The material that supports it: a query, output, transcript, calculation or cited passage |
+   | Evidence fate | Filled at step 8 |
+   | Provenance | What produced it: the probe, run, source document or person |
+   | Provenance fate | Filled at step 8 |
+   | Identifier | The slug or id it is cited by, where it has one |
+   | Identifier fate | Filled at step 8 |
+
+   Write the table even where a column is empty for every row, because a column
+   nobody filled is visibly unanswered and a sentence nobody wrote is not. A
+   prose list lets you check the cheap attribute and call the item checked: the
+   numbers are trivially verifiable and a provenance field is not, so the check
+   runs where the light is. Step 8 walks this table by column.
+
+5. **Choose the disposition and, where the output is a new document, its
+   shape.** Take the disposition from the two tables below, and say what the
+   finding levels were that decided it.
+
+   A new document is a document, not an excerpt, so four things need settling
+   before step 7 and none of them has a default:
+
+   - **Its document type**, which decides what it must carry. The original's
+     type does not carry over. An analysis document re-aimed for a different
+     reader is rarely another analysis document.
+   - **The host shape it must take**: the frontmatter fields, fixed sections and
+     template its destination binds it to.
+   - **Whether it declares identifiers of its own or cites the original's.** A
+     derivative document that mints a slug creates a second home for one name.
+     Say which it does, in the document, so a later reader does not have to
+     work it out.
+   - **Where it lives.** A document with no destination has no host, and a
+     document with no host is bound by nothing.
+
+   Once the document type and destination are chosen, read the destination's
+   `AI-VOICES.md`, instruction files, schema and template. Complete the output
+   obligations with the evidence scheme, shape and identifier rules that bind
+   there. Step 6 uses this completed list; do not plan or draft the new document
+   against the source host's obligations alone.
+
+6. **Agree the plan before changing prose**, for any disposition above *tune*.
+   Give the owner the disposition, the finding levels, the survival inventory,
+   and what the document will look like when it is done. A tune proceeds without
+   a pause.
+
+   Where step 7 will change the only standing source in place, verify that the
+   host holds a recoverable pre-edit version before writing. In Git, the source
+   must be committed; in another versioned host, use its durable version or
+   snapshot. This version permits rollback. It does not satisfy the survival
+   inventory: evidence that must survive still needs a named home in the live
+   result, its standing source, an appendix or an evidence artifact.
+
+7. **Revise from the top down.** Take structure before sections, sections before
+   paragraphs, and paragraphs before sentences. Never spend effort at a lower
+   level on material a higher level will delete, because a polished sentence in
+   a cut section is wasted work and it makes the cut harder to make. Where a
+   section-scoped revision produces content its section cannot hold, emit a
+   `BELONGS ELSEWHERE` block rather than dropping it or inlining it.
+
+8. **Verify.** Four checks, and report what each returned rather than that it
+   ran.
+
+   Run the target profile's own reader test against the result. Where the test
+   asks something only a person can answer, say that it could not be run and
+   name what you supplied instead of running it.
+
+   **Walk the step 4 table by fate column, not by row.** Fill every fate cell,
+   then report each attribute's totals separately. An item, evidence marker,
+   evidence artifact or provenance entry is carried, emitted, retained in the
+   standing source, or dropped with a reason. Evidence never drops solely
+   because the target cannot run its check. An identifier can also be renamed
+   when the document type's identifier rules permit it and every live citer is
+   updated in the same transaction. Drop an identifier only when the host
+   permits it and every live citer has been handled. A row whose Item survived
+   and whose Provenance did not is a partial loss, and reporting by row hides it
+   behind the attribute that did survive.
+
+   Check the result against the completed output obligations, naming each
+   obligation and how the result meets it. A host rule may permit an
+   obligation to be discharged some other way. A derivative section can name its
+   source once in place of a marker on every claim. Say which route you took,
+   and show that you took it.
+
+   Report the three numbers `../authoring-voice/document-types-code-repo.md`
+   § When you are revising requires — surface, total and emitted — and name the
+   reader need that any material growth serves. Where the revision produced a
+   new document and left the original standing, nothing was reduced: report what
+   this reader now reads and what the repository gained.
+
+## Choosing the disposition
+
+The disposition follows from how far up the levels the findings reach. Work out
+the highest level any finding sits at, and take the row that matches. A revision
+never starts at a lower level than its highest finding.
+
+| Level | A finding at this level says | Disposition |
+|---|---|---|
+| 1 — job | The document does not do what this reader needs at all, or serves two readers who need different documents | Redraft from the evidence, or split into two documents |
+| 2 — structure | The content is right and its order, sectioning or opening is wrong for this reader | Restructure |
+| 3 — content | Sections carry the wrong material for this reader: missing glosses, missing decision context, method they cannot check | Re-aim |
+| 4 — prose | Structure and content hold, and the sentences cost the reader more than they need to | Tune |
+| none | The findings are about something the document should not fix | Leave it, and say why |
+
+A document serving two audiences takes one profile written for both when their
+needs can be represented together. Split only when no single profile can serve
+both without conflict. `../authoring-voice/authoring-guides.md` steps 4 and 5
+govern both cases.
+
+The level decides how deep the work goes. What happens to the original is a
+second question, and the table above does not answer it. Take it from here.
+
+| The original | Output | Why |
+|---|---|---|
+| Frozen by a host constraint | **Derive.** A new document, and the original keeps every identifier it declared | The source cannot be edited, so the derivative cites rather than re-minting the source's identifiers. It may declare distinct identifiers required by its own host and document type |
+| Target reader is the source reader, and the source can be edited | **Revise the original in place** | Same-reader tuning creates no second audience and needs no second document |
+| Still serves a different reader after re-aiming | **A new document beside it** | Re-aiming at a second reader supersedes nothing. Both readers keep a document |
+| Serves nobody after re-aiming | **Replace it** | One reader, one document, and the old version goes to the changelog |
+
+**Derive is not restructure.** A restructure edits a document you own; a
+derivation reads one you may not touch and writes a second. The two produce
+different work at every level, so name which you are doing before step 7. Where
+the original is frozen, *derive* wins over whatever the level table's verb
+suggests.
+
+## What this skill does not decide
+
+It owns the procedure and nothing else. Four things belong elsewhere, and taking
+them from here rather than from their own guide is how a revision drifts from
+the standards the repository already set.
+
+- **What a document must carry, and in what order.** The
+  `../authoring-voice/document-types-*.md` guides own this, including the rules
+  on rewrite scope, the appendix, records and identifiers.
+- **How the prose sounds.** `../authoring-voice/voice-base.md` and the
+  `../authoring-voice/voice-*.md` guides own register, sentences and words.
+- **Which formats serve which reader task.** `../authoring-voice/affordances.md`
+  owns this, and `reader-diff.md` cites it rather than restating it.
+- **Who the reader is.** The profiles own that, and the routing in
+  `../authoring-voice/authoring-guides.md` settles which profile applies.
