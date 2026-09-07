@@ -65,7 +65,7 @@ identifier before assuming a reproduction competes with the original. It is
 usually a specific field or a specific document class rather than the visible
 form, so a derivative can often carry the structure whole and change one line.
 
-Two reads settle both questions, and neither is optional:
+Two searches settle both questions:
 
 1. **The host's own definition of the structure**, where one exists. Not the
    rule that mentions it in passing, and not a constraint written for a
@@ -75,6 +75,11 @@ Two reads settle both questions, and neither is optional:
    conventions may not transfer, so check what its rules are scoped to before
    copying them.
 
+Where no same-profile document exists, record the absence. Use an authoritative
+template governed by the same host and document type where one exists;
+otherwise preserve the current authored representation. The missing peer is
+not a licence to infer a new form and does not stop the revision.
+
 ## Worked example
 
 A cohort definition note is being re-aimed. Its original reader is the data
@@ -83,18 +88,19 @@ the work the cohort supports.
 
 **The input.** Roughly 1,200 words. It opens with the definition, gives the
 inclusion and exclusion rules, carries the SQL that implements them, names the
-source tables, and ends with a worked count against one month of data. Every
-clinical term appears bare, because the analyst profile says they hold SQL and
-not clinical vocabulary, and the note glosses in the other direction.
+source tables, and ends with a worked count against one month of data. The note
+glosses every clinical term because the analyst has limited clinical
+vocabulary. It leaves SQL identifiers bare because the analyst is fluent in
+SQL.
 
 **The steps.** Take the slots in order:
 
 - *Who they are.* The opening names an analyst reusing a definition. Rewrite it
   to name a leader deciding whether to fund.
-- *What they already hold.* The analyst holds SQL and no clinical vocabulary.
-  The leader holds neither, and holds governance and operations instead. Every
-  SQL identifier now needs a gloss or removal, and the clinical terms need one
-  for the first time.
+- *What they already hold.* The analyst holds SQL and limited clinical
+  vocabulary. The leader holds neither SQL nor data-model vocabulary, and
+  holds governance and operations instead. The clinical glosses stay. Every
+  SQL identifier now needs a gloss or removal.
 - *What they do with the document.* The analyst runs the query. The leader
   approves, funds or escalates. The definition stops being the point, and the
   ask, the cost and the risk become it. The lead section changes.

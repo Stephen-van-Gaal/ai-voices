@@ -1,6 +1,6 @@
 ---
 name: authoring-voice
-description: Use when writing or revising any prose that will live in a repository — a spec, definition, contract, README, design note, migration guide, commit message, pull-request body, or code comment. Also use for a research or analysis report, a brief to a health authority, a definition note for an analyst, an essay, a grant application, or a study protocol. Loads the base writing rules, the profile of the reader, the guide for what the document must carry, and the guide for how it should sound. Honours an AI-VOICES.md at the repository root where one exists, and an ai-voices block in a document's own frontmatter. Invoke before drafting, not after. Where the person writing brings their own standards for voice, theirs apply instead and these step aside.
+description: Use when drafting new prose that will live in a repository — a spec, definition, contract, README, design note, migration guide, commit message, pull-request body, or code comment. Also use for a new research or analysis report, brief, essay, grant application, or study protocol. Loads the base writing rules, reader profile, document-type guide, and voice guide before drafting. Use revise-for-reader instead when revising a document that already exists. Personal voice standards replace only the bundled voice rules; reader and document-shape obligations still apply.
 allowed-tools: Read, Glob, Grep
 ---
 

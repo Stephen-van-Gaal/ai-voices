@@ -1,6 +1,6 @@
 ---
 name: revise-for-reader
-description: Use when revising a document that already exists — re-aiming it at a reader it was not written for, or tuning it for the reader it already has. Derives what must change by diffing the source reader profile against the target profile, works from structure down to sentences, and verifies the result against the target reader's own test. Use authoring-voice instead when drafting something new. Where the person writing brings their own standards for voice, theirs apply instead and these step aside.
+description: Use when revising a document that already exists — re-aiming it at a reader it was not written for, or tuning it for the reader it already has. Derives what must change by diffing the source reader profile against the target profile, works from structure down to sentences, and verifies the result against the target reader's own test. Use authoring-voice instead when drafting something new. Personal voice standards replace only the bundled voice rules; reader and document-shape obligations still apply.
 allowed-tools: Read, Glob, Grep, Edit, Write
 ---
 
@@ -11,7 +11,7 @@ a document at a reader it was not written for, and tuning one for the reader it
 already has. Both run the procedure below, and the target reader decides which
 of the two you are doing.
 
-The reader of this file is an agent executing a revision and the owner
+This file has two readers: the agent executing a revision and the owner
 approving it. The guides it cites sit in the sibling skill and are named by
 relative path: `../authoring-voice/voice-base.md`. Read
 `../authoring-voice/authoring-guides.md` first, as that file directs, then read
@@ -51,20 +51,23 @@ sequence ends when step 8 passes or reports what it could not verify.
    document or one section, because several rules can only be executed at
    document scope; `../authoring-voice/document-types-code-repo.md` § Scope of a
    rewrite governs both. Resolve the source reader from the document's
-   `ai-voices` frontmatter block, else the repository's `AI-VOICES.md` routing,
-   else the reader named in the document's opening. Take the target reader from
-   the request. Ask the owner for what a read cannot recover: what must not
-   change, what happens to the original, and any constraint the document does
-   not state. Do not ask what is wrong with the document.
+   `ai-voices` frontmatter block, else the reader named in its opening, else the
+   repository's `AI-VOICES.md` path routing, else its default reader, else the
+   built-in table in `../authoring-voice/authoring-guides.md`. Take the target
+   reader from the request. Where the request names no different audience, use
+   the resolved source reader as the target; that is the tuning case. Ask the
+   owner for what a read cannot recover: what must not change, what happens to
+   the original, and any constraint the document does not state. Do not ask
+   what is wrong with the document.
 
-   **Read all three reader sources, not only the first that answers, and report
-   any disagreement between them.** The order above settles which reader
-   governs, and it does not make the others wrong. A document whose opening
-   names an audience its routing does not send it to is telling you something
-   about itself. Either the routing is stale, or the document drifted from the
-   reader it was filed under. Record that as a finding against the original at
-   step 2. It can also change the job, because a document already written for
-   the target reader needs a correction rather than a re-aim.
+   **Read every applicable reader declaration, not only the first that answers,
+   and report any disagreement between them.** The order above settles which
+   reader governs, and it does not make the others wrong. A document whose
+   opening names an audience its routing does not send it to is telling you
+   something about itself. Either the routing is stale, or the document drifted
+   from the reader it was filed under. Record that as a finding against the
+   original at step 2. It can also change the job, because a document already
+   written for the target reader needs a correction rather than a re-aim.
 
    Then record the host's **output obligations** separately from its
    prohibitions. A prohibition says what you may not change, and **When to stop**
@@ -75,14 +78,16 @@ sequence ends when step 8 passes or reports what it could not verify.
    its identifiers. Step 8 verifies the result against this list. A revision
    that satisfies every prohibition and no obligation still fails its host.
 
-2. **Read the document yourself, against the target profile, slot by slot.**
-   Take every slot whether or not anyone has mentioned it. Ask what the document
-   would look like written today for this reader, rather than what is wrong with
-   the one in front of you; the second question preserves the shape you already
-   have, and `../authoring-voice/document-types-code-repo.md` § When you are
-   revising states the rule. Record each finding with the slot it comes from and
-   the level it sits at, per **Choosing the disposition** below. A finding that
-   cites no slot is taste, so cut it.
+2. **Diff the reader profiles, then read the document against the target.** Read
+   both profiles whole and use `reader-diff.md` slot by slot to derive the edit
+   list. Take every slot whether or not anyone has mentioned it, including the
+   slots that produce no edit. Then ask what the document would look like
+   written today for the target reader, rather than what is wrong with the one
+   in front of you; the second question preserves the shape you already have,
+   and `../authoring-voice/document-types-code-repo.md` § When you are revising
+   states the rule. Record each finding with the slot it comes from and the
+   level it sits at, per **Choosing the disposition** below. A finding that cites
+   no slot is taste, so cut it.
 
 3. **Reconcile your read with what the owner told you.** Where a complaint you
    were given matches a finding, say so. Where your read contradicts it, say
@@ -97,10 +102,13 @@ sequence ends when step 8 passes or reports what it could not verify.
    | Column | Holds |
    |---|---|
    | Item | The claim, number, caveat, confidence boundary, commitment or named accountability |
+   | Item fate | Filled at step 8 |
    | Evidence marker | How it is known, in the host's evidence vocabulary |
+   | Evidence fate | Filled at step 8 |
    | Provenance | What produced it: the probe, run, source document or person |
+   | Provenance fate | Filled at step 8 |
    | Identifier | The slug or id it is cited by, where it has one |
-   | Fate | Filled at step 8: carried, emitted, or dropped with a reason |
+   | Identifier fate | Filled at step 8 |
 
    Write the table even where a column is empty for every row, because a column
    nobody filled is visibly unanswered and a sentence nobody wrote is not. A
@@ -147,13 +155,15 @@ sequence ends when step 8 passes or reports what it could not verify.
    asks something only a person can answer, say that it could not be run and
    name what you supplied instead of running it.
 
-   **Walk the step 4 table by column, not by row.** Fill the Fate column for
-   every row, then report each column's total separately: items carried,
-   evidence markers carried, provenance carried, identifiers carried. A row
-   whose Item survived and whose Provenance did not is a partial loss, and
-   reporting by row hides it behind the attribute that did survive. An
-   identifier is carried or emitted, never dropped, because it is how another
-   document cites this evidence.
+   **Walk the step 4 table by fate column, not by row.** Fill every fate cell,
+   then report each attribute's totals separately. An item, evidence marker or
+   provenance entry is carried, emitted, retained in the standing source, or
+   dropped with a reason. An identifier can also be renamed when the document
+   type's identifier rules permit it and every live citer is updated in the
+   same transaction. Drop an identifier only when the host permits it and every
+   live citer has been handled. A row whose Item survived and whose Provenance
+   did not is a partial loss, and reporting by row hides it behind the attribute
+   that did survive.
 
    Check the result against the output obligations recorded at step 1, naming
    each obligation and how the result meets it. A host rule may permit an
@@ -181,16 +191,17 @@ never starts at a lower level than its highest finding.
 | 4 — prose | Structure and content hold, and the sentences cost the reader more than they need to | Tune |
 | none | The findings are about something the document should not fix | Leave it, and say why |
 
-A document serving two readers splits rather than compromises:
-`../authoring-voice/authoring-guides.md` step 4 permits one profile per
-document, and a compromise serves neither reader.
+A document serving two audiences takes one profile written for both when their
+needs can be represented together. Split only when no single profile can serve
+both without conflict. `../authoring-voice/authoring-guides.md` steps 4 and 5
+govern both cases.
 
 The level decides how deep the work goes. What happens to the original is a
 second question, and the table above does not answer it. Take it from here.
 
 | The original | Output | Why |
 |---|---|---|
-| Frozen by a host constraint | **Derive.** A new document, and the original keeps every identifier it declared | The source cannot be edited, so the work is derivation rather than revision. The derivative cites; it does not mint |
+| Frozen by a host constraint | **Derive.** A new document, and the original keeps every identifier it declared | The source cannot be edited, so the derivative cites rather than re-minting the source's identifiers. It may declare distinct identifiers required by its own host and document type |
 | Still serves the reader it was written for | **A new document beside it** | Re-aiming at a second reader supersedes nothing. Both readers keep a document |
 | Serves nobody once revised | **Replace it** | One reader, one document, and the old version goes to the changelog |
 

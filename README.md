@@ -1,8 +1,8 @@
 # ai-voices
 
 Writing guides for AI agents: who a document is for, what it has to carry,
-and how its prose should sound. They install as a Claude Code skill, so an
-agent reads them before drafting rather than after.
+and how its prose should sound. They install as Claude Code and Codex plugin
+skills, so an agent reads them before drafting or revising rather than after.
 
 These are one author's standards, kept here because they need to reach every
 project he works in and every agent working alongside him. They are published
@@ -12,9 +12,11 @@ write. Adapt freely; the guides expect it.
 
 ## What is here
 
-Everything lives in `skills/authoring-voice/`. Start with `authoring-guides.md`:
-it routes you to the guides that apply, says how they resolve against each
-other, and says where they yield.
+The plugin has two skills. `skills/authoring-voice/` governs new drafts; start
+with `authoring-guides.md`, which routes an agent to the applicable guides and
+states how they resolve. `skills/revise-for-reader/` governs existing documents;
+it derives changes by diffing the source and target reader profiles before
+working from structure down to sentences.
 
 The guides sit on three axes. Every document takes a voice and at least one
 reader; it takes a document type where one covers its kind.
@@ -73,12 +75,14 @@ read as a declaration to these guides. `authoring-guides.md` defines it under
 
 ## Using them
 
-Install the plugin and invoke the `authoring-voice` skill before drafting. An
-agent that reads a guide afterwards produces prose written one way and then
-patched, which reads worse than either.
+Install the plugin and invoke `authoring-voice` before drafting a new document.
+Invoke `revise-for-reader` before changing an existing one. An agent that reads
+a guide afterwards produces prose written one way and then patched, which reads
+worse than either.
 
 To make them apply without being asked, add a line to your own agent instruction
-file telling the agent to invoke `authoring-voice` before writing prose.
+file routing new prose to `authoring-voice` and revisions to
+`revise-for-reader`.
 
 ## What moved in 0.5.0
 
