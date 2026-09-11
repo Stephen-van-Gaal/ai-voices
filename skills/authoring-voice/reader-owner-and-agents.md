@@ -25,7 +25,11 @@ document has to serve both without being written twice.
   hidden in prose, a term used bare, and prose that could not be checked
   before it was approved.
 - **Affordances that serve them.** A glossary once three or more terms fall
-  outside the owner's vocabulary. A code block for every identifier, path,
+  outside the owner's vocabulary, placed ahead of the argument and ordered as
+  `affordances.md` orders a front glossary. The concrete case before the
+  general rule in each section, and one unheld term per sentence, as
+  `reader-owner.md` says: the agent loses nothing by the example, and the
+  owner cannot approve without it. A code block for every identifier, path,
   command and query. An action-by-role table where the two readers leave with
   different work. A decision path where the document routes on a condition.
 - **Reader test.** Could the owner say what will happen when the agent
