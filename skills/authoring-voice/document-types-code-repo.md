@@ -330,7 +330,8 @@ inert. Two things take their place.
 - **Gloss your own terms.** The rule that names a document's assumed
   vocabulary lives in its opening, which a section drafted before its document
   does not own. Gloss each term at first use and emit the vocabulary
-  declaration for the opening.
+  declaration for the opening. The term list `authoring-guides.md` § Before
+  drafting asks for is where each gloss comes from.
 
 ## When you are revising
 
