@@ -12,6 +12,14 @@ against claims they can check.
   library pattern needs a sentence. Shell, regular expressions, and
   infrastructure (CI runners, APIs, hooks, tokens, caching, process models)
   barely at all, and that is where writing most often goes over their head.
+  Of software-design vocabulary, they hold a term that names an artifact they
+  have handled: a schema, an enum, a YAML file, a manifest. They do not hold a
+  term that names a property, a mechanism or a computer-science concept:
+  invariant, predicate, serialization, syntax tree, loader, state machine.
+  Gloss those where they stand, or say the concrete thing instead. Of the
+  project's own coined terms, they hold the ones its live authority has
+  adopted, and the repository's `AI-VOICES.md` lists those. A term a proposal
+  is still introducing is not yet held, however often the proposal uses it.
 - **What they do with the document.** Approve or withhold approval; act on a
   finding; carry the reasoning to a colleague. They read once, whole, and
   they do not skim.
@@ -21,14 +29,24 @@ against claims they can check.
   on one of those needs the gloss beside it.
 - **Time and attention.** Enough to read the whole document once with care.
   Not enough to read it twice, so a sentence that needs a second read costs
-  the meaning rather than the time.
+  the meaning rather than the time. The usual cause of a second read is not
+  one unknown word but density: a sentence that stacks three exact terms
+  cannot be parsed by a reader who must resolve each of them. Hold a sentence
+  to one term the reader does not hold, glossed where it stands. A longer
+  document they can read once beats a shorter one they must read twice.
 - **What costs their trust.** A claim with no number, name or path. A
   prediction reported as a result ("should work now"). A mechanism asserted
   with no sentence saying how it works. Opening praise, and agreement that
   carries no information.
 - **Affordances that serve them.** A worked example for any construct outside
   their vocabulary. A one-sentence gloss of a mechanism beside its first use.
-  A boundary-case table where two things look alike and differ. A decision
-  path where a choice is put to them, with what turns on it stated first.
+  The concrete case before the general rule, in each section and not only in
+  the opening. A reader who has seen the two files that disagree can follow a
+  rule about single-source meaning, and the rule alone does not show them the
+  files. A glossary placed ahead of the argument, grouped in the order the
+  argument takes the terms, as `affordances.md` orders a front glossary. They
+  read it as preparation, and they do not scroll to one at the end. A
+  boundary-case table where two things look alike and differ. A decision path
+  where a choice is put to them, with what turns on it stated first.
 - **Reader test.** Could they explain the finding, and how it works, to a
-  colleague in one sentence each?
+  colleague in one sentence each, and did any sentence need a second read?
