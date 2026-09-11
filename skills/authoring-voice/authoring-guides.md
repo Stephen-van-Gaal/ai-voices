@@ -113,8 +113,9 @@ use that falls outside the reader profile and the project vocabulary in
 `AI-VOICES.md`, in the order the argument will take them. Beside each, its
 gloss: where a dictionary in the repository defines the term, take that
 description and cite the concept; otherwise write one plain sentence. This list
-is the front glossary where the reader profile asks for one, and the source of
-each first-use gloss otherwise. Draft with it in view. An author holds every
+is the front glossary where the reader profile asks for one: give each entry a plain
+meaning, why it matters here, and still gloss each term at first use. Otherwise, use it as
+the source of each first-use gloss. Draft with it in view. An author holds every
 term and cannot feel which ones the reader lacks, so the list is the only place
 that gap becomes visible before the prose exists. A term the sources use in two
 senses arrives here as two glosses under one name; say which sense the document
