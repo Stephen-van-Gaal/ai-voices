@@ -18,8 +18,9 @@ against claims they can check.
   invariant, predicate, serialization, syntax tree, loader, state machine.
   Gloss those where they stand, or say the concrete thing instead. Of the
   project's own coined terms, they hold the ones its live authority has
-  adopted, and the repository's `AI-VOICES.md` lists those. A term a proposal
-  is still introducing is not yet held, however often the proposal uses it.
+  adopted. Where the repository has an `AI-VOICES.md`, its project vocabulary
+  lists those; without one, treat a coinage as unheld. A term a proposal is
+  still introducing is not yet held, however often the proposal uses it.
 - **What they do with the document.** Approve or withhold approval; act on a
   finding; carry the reasoning to a colleague. They read once, whole, and
   they do not skim.
